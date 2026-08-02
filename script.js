@@ -1,9 +1,9 @@
 let aktifAlarm = null;
 let toplamSorgu = 0;
- 
 let alarmKayitlari = [];
  
-const alarmlar = {
+let alarmlar =
+JSON.parse(localStorage.getItem("alarmlar")) || {
  
 "STC1 F041": {
  
@@ -13,7 +13,7 @@ uzunAdi:
 neden:
 "Fork bini üzerine aldıktan sonra güvenli bölgede değil. Gap sensörleri görüyor.",
  
-mudahale: [
+mudahale:[
 "Sağ sensörü kontrol et",
 "Sol sensörü kontrol et",
 "Reflektörleri temizle",
@@ -23,55 +23,55 @@ mudahale: [
 "Start ver ve kontrol et"
 ],
  
-fotograf: "",
-cozumler: []
-},
- 
-"F127": {
- 
-uzunAdi:
-"Konveyör Motoru Aşırı Akım Alarmı",
- 
-neden:
-"Motor sıkışması veya aşırı yük.",
- 
-mudahale: [
-"Motoru durdur",
-"Mekanik sıkışmayı kontrol et",
-"Motor sıcaklığını kontrol et",
-"Kablo bağlantılarını kontrol et",
-"Reset uygula"
-],
- 
-fotograf: "",
-cozumler: []
+fotograf:"",
+cozumler:[]
 }
  
 };
  
-function tarihSaat() {
+function kaydet(){
+ 
+localStorage.setItem(
+"alarmlar",
+JSON.stringify(alarmlar)
+);
+ 
+}
+ 
+function tarihSaat(){
  
 document.getElementById("saat").innerHTML =
 "📅 " + new Date().toLocaleString("tr-TR");
  
 }
  
-setInterval(tarihSaat, 1000);
+setInterval(tarihSaat,1000);
 tarihSaat();
  
-for (let kod in alarmlar) {
+listeyiYukle();
  
-document.getElementById("alarmlarListesi").innerHTML +=
-`<option value="${kod}">`;
+function listeyiYukle(){
+ 
+let html = "";
+ 
+for(let kod in alarmlar){
+ 
+html += `<option value="${kod}">`;
  
 }
  
-function alarmAra() {
+document.getElementById("alarmlarListesi").innerHTML = html;
+}
+ 
+function alarmAra(){
  
 document.getElementById("not").value = "";
  
 let alarmNo =
 document.getElementById("alarmNo").value;
+ 
+let alarm =
+alarmlar[alarmNo];
  
 let operator =
 document.getElementById("operator").value;
@@ -79,15 +79,10 @@ document.getElementById("operator").value;
 let vardiya =
 document.getElementById("vardiya").value;
  
-let alarm =
-alarmlar[alarmNo];
- 
-if (!alarm) {
+if(!alarm){
  
 document.getElementById("sonuc").innerHTML =
 "<h2>❌ Alarm Bulunamadı</h2>";
- 
-document.getElementById("alarmResmi").src = "";
  
 return;
 }
@@ -99,7 +94,7 @@ toplamSorgu++;
 document.getElementById("istatistik").innerHTML =
 "Toplam Sorgu : " + toplamSorgu;
  
-if (alarm.fotograf) {
+if(alarm.fotograf){
  
 document.getElementById("alarmResmi").src =
 alarm.fotograf;
@@ -110,7 +105,6 @@ document.getElementById("alarmResmi").src = "";
 }
  
 let html = `
- 
 <h2>✅ Alarm Bulundu</h2>
  
 <p><b>Operatör:</b> ${operator}</p>
@@ -119,18 +113,16 @@ let html = `
  
 <p><b>Alarm No:</b> ${alarmNo}</p>
  
-<p><b>Uzun Adı:</b><br>
-${alarm.uzunAdi}</p>
+<p><b>Uzun Adı:</b><br>${alarm.uzunAdi}</p>
  
-<p><b>Neden:</b><br>
-${alarm.neden}</p>
+<p><b>Neden:</b><br>${alarm.neden}</p>
  
 <b>Müdahale Adımları</b>
  
 <ul>
 `;
  
-alarm.mudahale.forEach(adim => {
+alarm.mudahale.forEach(adim=>{
  
 html += `<li>${adim}</li>`;
  
@@ -140,12 +132,12 @@ html += "</ul>";
  
 html += "<h3>📚 Çözüm Geçmişi</h3>";
  
-if (alarm.cozumler.length === 0) {
+if(alarm.cozumler.length===0){
  
 html += "Kayıt yok.";
 }
  
-alarm.cozumler.forEach(kayit => {
+alarm.cozumler.forEach(kayit=>{
  
 html += `
 <div style="
@@ -155,44 +147,31 @@ margin:5px;
 border-radius:10px;">
  
 <b>Tarih:</b> ${kayit.tarih}<br>
- 
 <b>Operatör:</b> ${kayit.operator}<br>
- 
 <b>Not:</b> ${kayit.not}
  
 </div>
 `;
 });
  
-document.getElementById("sonuc").innerHTML =
-html;
+document.getElementById("sonuc").innerHTML = html;
  
 document.getElementById("gecmis").innerHTML +=
- 
-`<li>
-${new Date().toLocaleString("tr-TR")}
-- ${alarmNo}
-</li>`;
+`<li>${new Date().toLocaleString("tr-TR")} - ${alarmNo}</li>`;
 }
  
-function notKaydet() {
+function notKaydet(){
  
-if (!aktifAlarm) {
+if(!aktifAlarm){
  
 alert("Önce alarm seçiniz.");
 return;
 }
  
-let operator =
-document.getElementById("operator").value;
- 
-let vardiya =
-document.getElementById("vardiya").value;
- 
 let not =
 document.getElementById("not").value;
  
-if (not.trim() === "") {
+if(not.trim()===""){
  
 alert("Not giriniz.");
 return;
@@ -200,34 +179,31 @@ return;
  
 let kayit = {
  
-tarih:
-new Date().toLocaleString("tr-TR"),
+tarih:new Date().toLocaleString("tr-TR"),
  
-alarmNo:
-aktifAlarm,
+alarmNo:aktifAlarm,
  
-operator:
-operator,
+operator:document.getElementById("operator").value,
  
-vardiya:
-vardiya,
+vardiya:document.getElementById("vardiya").value,
  
-not:
-not
+not:not
 };
  
 alarmlar[aktifAlarm].cozumler.push(kayit);
  
 alarmKayitlari.push(kayit);
  
+kaydet();
+ 
 alarmAra();
 }
  
 document
 .getElementById("fotoSec")
-.addEventListener("change", function (e) {
+.addEventListener("change",function(e){
  
-if (!aktifAlarm) {
+if(!aktifAlarm){
  
 alert("Önce alarm seçiniz.");
 return;
@@ -235,23 +211,23 @@ return;
  
 let dosya = e.target.files[0];
  
-if (dosya) {
+if(dosya){
  
 let url =
 URL.createObjectURL(dosya);
  
-alarmlar[aktifAlarm].fotograf =
-url;
+alarmlar[aktifAlarm].fotograf = url;
  
-document.getElementById("alarmResmi").src =
-url;
+kaydet();
+ 
+document.getElementById("alarmResmi").src = url;
 }
  
 });
  
-function csvIndir() {
+function csvIndir(){
  
-if (alarmKayitlari.length === 0) {
+if(alarmKayitlari.length===0){
  
 alert("Kayıt bulunamadı.");
 return;
@@ -260,17 +236,16 @@ return;
 let csv =
 "Tarih;AlarmNo;Operatör;Vardiya;Not\n";
  
-alarmKayitlari.forEach(k => {
+alarmKayitlari.forEach(k=>{
  
 csv +=
 `"${k.tarih}";"${k.alarmNo}";"${k.operator}";"${k.vardiya}";"${k.not}"\n`;
  
 });
  
-let blob =
-new Blob(
-["\ufeff" + csv],
-{ type: "text/csv;charset=utf-8;" }
+let blob = new Blob(
+["\ufeff"+csv],
+{type:"text/csv;charset=utf-8;"}
 );
  
 let link =
@@ -283,4 +258,56 @@ link.download =
 "alarm_gecmisi.csv";
  
 link.click();
+}
+ 
+function alarmEkle(){
+ 
+let alarmNo =
+document.getElementById("yeniAlarmNo").value;
+ 
+let uzunAdi =
+document.getElementById("yeniAlarmAdi").value;
+ 
+let neden =
+document.getElementById("yeniAlarmNeden").value;
+ 
+let mudahale =
+document.getElementById("yeniAlarmMudahale")
+.value
+.split("\n");
+ 
+if(alarmNo==="" || uzunAdi===""){
+ 
+alert("Alarm No ve Uzun Adı gerekli.");
+return;
+}
+ 
+alarmlar[alarmNo] = {
+ 
+uzunAdi:uzunAdi,
+neden:neden,
+mudahale:mudahale,
+fotograf:"",
+cozumler:[]
+};
+ 
+kaydet();
+listeyiYukle();
+ 
+alert(alarmNo + " başarıyla eklendi.");
+ 
+document.getElementById("yeniAlarmNo").value="";
+document.getElementById("yeniAlarmAdi").value="";
+document.getElementById("yeniAlarmNeden").value="";
+document.getElementById("yeniAlarmMudahale").value="";
+}
+ 
+function tumVerileriSil(){
+ 
+if(confirm("Tüm veriler silinsin mi?")){
+ 
+localStorage.clear();
+ 
+location.reload();
+}
 }
