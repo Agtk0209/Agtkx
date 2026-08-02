@@ -373,3 +373,14 @@ listeyiYukle();
  
 location.reload();
 }
+function yoneticiKontrol() {
+ 
+let sifre =
+prompt("Yönetici şifresini giriniz");
+ 
+if (sifre === null) {
+return false;
+}
+ 
+return sifre === YONETICI_SIFRESI;
+}
