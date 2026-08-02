@@ -35,9 +35,7 @@ placeholder="Alarm No Gir">
  
 <button onclick="alarmAra()">Ara</button>
  
-<button onclick="csvIndir()">
-📊 CSV İndir
-</button>
+<button onclick="csvIndir()">📊 CSV İndir</button>
  
 <hr>
  
@@ -86,6 +84,40 @@ placeholder="Arızayı nasıl çözdünüz?">
 <h3>📋 Alarm Arama Geçmişi</h3>
  
 <ul id="gecmis"></ul>
+ 
+<hr>
+ 
+<h2>➕ Yeni Alarm Ekle</h2>
+ 
+<input id="yeniAlarmNo" placeholder="Alarm No">
+ 
+<br>
+ 
+<input id="yeniAlarmAdi" placeholder="Alarmın Uzun Adı">
+ 
+<br>
+ 
+<textarea
+id="yeniAlarmNeden"
+rows="3"
+cols="60"
+placeholder="Alarmın Nedeni">
+</textarea>
+ 
+<br>
+ 
+<textarea
+id="yeniAlarmMudahale"
+rows="5"
+cols="60"
+placeholder="Her satıra bir müdahale adımı gir">
+</textarea>
+ 
+<br><br>
+ 
+<button onclick="alarmEkle()">
+➕ Alarm Ekle
+</button>
  
 <script src="script.js"></script>
  
