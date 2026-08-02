@@ -1,36 +1,36 @@
-body {
-font-family: Arial, sans-serif;
-padding: 20px;
-background: #f3f3f3;
+body{
+font-family:Arial;
+padding:20px;
+background:#f3f3f3;
 }
  
 input,
 select,
-textarea {
-padding: 8px;
-margin: 5px;
+textarea{
+padding:8px;
+margin:5px;
 }
  
-button {
-background: #28a745;
-color: white;
-border: none;
-padding: 10px;
-cursor: pointer;
+button{
+padding:10px;
+border:none;
+background:#28a745;
+color:white;
+cursor:pointer;
 }
  
-button:hover {
-background: #218838;
+button:hover{
+background:#218838;
 }
  
-#sonuc {
-background: white;
-padding: 15px;
-margin-top: 15px;
-border-radius: 10px;
+#sonuc{
+background:white;
+padding:15px;
+border-radius:10px;
+margin-top:15px;
 }
  
-img {
-border-radius: 10px;
-border: 1px solid #ccc;
+img{
+border:1px solid #ccc;
+border-radius:10px;
 }
