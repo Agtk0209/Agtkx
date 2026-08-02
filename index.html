@@ -6,8 +6,8 @@
 <title>Alarm Asistanı</title>
  
 <link rel="stylesheet" href="style.css">
- 
 </head>
+ 
 <body>
  
 <h1>🚨 Alarm Asistanı</h1>
@@ -16,7 +16,10 @@
  
 <hr>
  
-<input id="operator" placeholder="Operatör Adı" value="Ahmet">
+<input
+id="operator"
+placeholder="Operatör Adı"
+value="Ahmet">
  
 <select id="vardiya">
 <option>A Vardiyası</option>
@@ -35,9 +38,55 @@ placeholder="Alarm No Gir">
  
 <button onclick="alarmAra()">Ara</button>
  
+<button onclick="csvIndir()">📊 CSV İndir</button>
+ 
+<hr>
+ 
+<h3>📷 Alarm Fotoğrafı</h3>
+ 
+<input
+type="file"
+id="fotoSec"
+accept="image/*">
+ 
+<br><br>
+ 
+<img
+id="alarmResmi"
+width="400">
+ 
+<hr>
+ 
+<h3>📝 Operatör Notu</h3>
+ 
+<textarea
+id="not"
+rows="4"
+cols="60"
+placeholder="Arızayı nasıl çözdünüz?">
+</textarea>
+ 
+<br><br>
+ 
+<button onclick="notKaydet()">
+💾 Not Kaydet
+</button>
+ 
 <hr>
  
 <div id="sonuc"></div>
+ 
+<hr>
+ 
+<h3>📊 İstatistik</h3>
+ 
+<div id="istatistik"></div>
+ 
+<hr>
+ 
+<h3>📋 Alarm Arama Geçmişi</h3>
+ 
+<ul id="gecmis"></ul>
  
 script.jsscript>
  
