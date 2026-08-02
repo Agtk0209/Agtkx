@@ -23,10 +23,8 @@ mudahale: [
 };
  
 function tarihSaat() {
- 
 document.getElementById("saat").innerHTML =
 "📅 " + new Date().toLocaleString("tr-TR");
- 
 }
  
 setInterval(tarihSaat, 1000);
@@ -38,8 +36,7 @@ for (let kod in alarmlar) {
 liste += `<option value="${kod}">`;
 }
  
-document.getElementById("alarmlarListesi").innerHTML =
-liste;
+document.getElementById("alarmlarListesi").innerHTML = liste;
  
 function alarmAra() {
  
@@ -77,6 +74,6 @@ html += `<li>${adim}</li>`;
  
 html += "</ul>";
  
-document.getElementById("sonuc").innerHTML =
-html;
+document.getElementById("sonuc").innerHTML = html;
+ 
 }
