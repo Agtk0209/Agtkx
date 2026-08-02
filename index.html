@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr">
+ 
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
 <link rel="stylesheet" href="style.css">
  
 </head>
+ 
 <body>
  
 <h1>🚨 Alarm Asistanı</h1>
@@ -16,7 +18,10 @@
  
 <hr>
  
-<input id="operator" placeholder="Operatör Adı" value="Ahmet">
+<input
+id="operator"
+placeholder="Operatör Adı"
+value="Ahmet">
  
 <select id="vardiya">
 <option>A Vardiyası</option>
@@ -26,23 +31,35 @@
  
 <br><br>
  
-<input list="alarmlarListesi" id="alarmNo" placeholder="Alarm No Gir">
+<input
+list="alarmlarListesi"
+id="alarmNo"
+placeholder="Alarm No Gir">
  
 <datalist id="alarmlarListesi"></datalist>
  
-<button onclick="alarmAra()">Ara</button>
+<button onclick="alarmAra()">
+Ara
+</button>
  
-<button onclick="csvIndir()">📊 CSV İndir</button>
+<button onclick="csvIndir()">
+📊 CSV İndir
+</button>
  
 <hr>
  
 <h3>📷 Alarm Fotoğrafı</h3>
  
-<input type="file" id="fotoSec" accept="image/*">
+<input
+type="file"
+id="fotoSec"
+accept="image/*">
  
 <br><br>
  
-<img id="alarmResmi" width="400">
+<img
+id="alarmResmi"
+width="400">
  
 <hr>
  
@@ -80,11 +97,15 @@ placeholder="Arızayı nasıl çözdünüz?"></textarea>
  
 <h2>➕ Yeni Alarm Ekle</h2>
  
-<input id="yeniAlarmNo" placeholder="Alarm No">
+<input
+id="yeniAlarmNo"
+placeholder="Alarm No">
  
 <br>
  
-<input id="yeniAlarmAdi" placeholder="Uzun Adı">
+<input
+id="yeniAlarmAdi"
+placeholder="Uzun Adı">
  
 <br>
  
@@ -100,7 +121,7 @@ placeholder="Alarm Nedeni"></textarea>
 id="yeniAlarmMudahale"
 rows="5"
 cols="60"
-placeholder="Her satıra bir müdahale yaz"></textarea>
+placeholder="Her satıra bir müdahale adımı yaz"></textarea>
  
 <br><br>
  
@@ -111,7 +132,13 @@ placeholder="Her satıra bir müdahale yaz"></textarea>
 <hr>
  
 <button onclick="tumVerileriSil()">
-🗑️ Tüm Verileri Sil
+🗑️ Sonradan Eklenen Alarmları Sil
+</button>
+ 
+<br><br>
+ 
+<button onclick="cozumGecmisiTemizle()">
+🧹 Çözüm Geçmişini Temizle
 </button>
  
 <script src="script.js"></script>
