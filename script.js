@@ -113,30 +113,17 @@ let html = `
  
 <h2>✅ Alarm Bulundu</h2>
  
-<p>
-<b>Operatör:</b>
-${operator}
-</p>
+<p><b>Operatör:</b> ${operator}</p>
  
-<p>
-<b>Vardiya:</b>
-${vardiya}
-</p>
+<p><b>Vardiya:</b> ${vardiya}</p>
  
-<p>
-<b>Alarm No:</b>
-${alarmNo}
-</p>
+<p><b>Alarm No:</b> ${alarmNo}</p>
  
-<p>
-<b>Uzun Adı:</b><br>
-${alarm.uzunAdi}
-</p>
+<p><b>Uzun Adı:</b><br>
+${alarm.uzunAdi}</p>
  
-<p>
-<b>Neden:</b><br>
-${alarm.neden}
-</p>
+<p><b>Neden:</b><br>
+${alarm.neden}</p>
  
 <b>Müdahale Adımları</b>
  
@@ -161,27 +148,20 @@ html += "Kayıt yok.";
 alarm.cozumler.forEach(kayit => {
  
 html += `
- 
 <div style="
 background:#efefef;
 padding:10px;
 margin:5px;
 border-radius:10px;">
  
-<b>Tarih:</b>
-${kayit.tarih}
-<br>
+<b>Tarih:</b> ${kayit.tarih}<br>
  
-<b>Operatör:</b>
-${kayit.operator}
-<br>
+<b>Operatör:</b> ${kayit.operator}<br>
  
-<b>Not:</b>
-${kayit.not}
+<b>Not:</b> ${kayit.not}
  
 </div>
 `;
- 
 });
  
 document.getElementById("sonuc").innerHTML =
