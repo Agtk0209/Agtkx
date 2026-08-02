@@ -2,8 +2,7 @@ let aktifAlarm = null;
 let toplamSorgu = 0;
 let alarmKayitlari = [];
  
-let alarmlar =
-JSON.parse(localStorage.getItem("alarmlar")) || {
+const varsayilanAlarmlar = {
  
 "STC1 F041": {
  
@@ -13,7 +12,7 @@ uzunAdi:
 neden:
 "Fork bini üzerine aldıktan sonra güvenli bölgede değil. Gap sensörleri görüyor.",
  
-mudahale:[
+mudahale: [
 "Sağ sensörü kontrol et",
 "Sol sensörü kontrol et",
 "Reflektörleri temizle",
@@ -23,11 +22,16 @@ mudahale:[
 "Start ver ve kontrol et"
 ],
  
-fotograf:"",
-cozumler:[]
+fotograf: "",
+cozumler: []
 }
  
 };
+ 
+let alarmlar =
+JSON.parse(localStorage.getItem("alarmlar"))
+||
+JSON.parse(JSON.stringify(varsayilanAlarmlar));
  
 function kaydet(){
  
@@ -60,7 +64,8 @@ html += `<option value="${kod}">`;
  
 }
  
-document.getElementById("alarmlarListesi").innerHTML = html;
+document.getElementById("alarmlarListesi").innerHTML =
+html;
 }
  
 function alarmAra(){
@@ -99,7 +104,7 @@ if(alarm.fotograf){
 document.getElementById("alarmResmi").src =
 alarm.fotograf;
  
-} else {
+}else{
  
 document.getElementById("alarmResmi").src = "";
 }
@@ -122,7 +127,7 @@ let html = `
 <ul>
 `;
  
-alarm.mudahale.forEach(adim=>{
+alarm.mudahale.forEach(adim => {
  
 html += `<li>${adim}</li>`;
  
@@ -132,15 +137,16 @@ html += "</ul>";
  
 html += "<h3>📚 Çözüm Geçmişi</h3>";
  
-if(alarm.cozumler.length===0){
+if(alarm.cozumler.length === 0){
  
 html += "Kayıt yok.";
 }
  
-alarm.cozumler.forEach(kayit=>{
+alarm.cozumler.forEach(kayit => {
  
 html += `
-<div style="
+<div
+style="
 background:#efefef;
 padding:10px;
 margin:5px;
@@ -152,9 +158,11 @@ border-radius:10px;">
  
 </div>
 `;
+ 
 });
  
-document.getElementById("sonuc").innerHTML = html;
+document.getElementById("sonuc").innerHTML =
+html;
  
 document.getElementById("gecmis").innerHTML +=
 `<li>${new Date().toLocaleString("tr-TR")} - ${alarmNo}</li>`;
@@ -171,7 +179,7 @@ return;
 let not =
 document.getElementById("not").value;
  
-if(not.trim()===""){
+if(not.trim() === ""){
  
 alert("Not giriniz.");
 return;
@@ -179,15 +187,20 @@ return;
  
 let kayit = {
  
-tarih:new Date().toLocaleString("tr-TR"),
+tarih:
+new Date().toLocaleString("tr-TR"),
  
-alarmNo:aktifAlarm,
+alarmNo:
+aktifAlarm,
  
-operator:document.getElementById("operator").value,
+operator:
+document.getElementById("operator").value,
  
-vardiya:document.getElementById("vardiya").value,
+vardiya:
+document.getElementById("vardiya").value,
  
-not:not
+not:
+not
 };
  
 alarmlar[aktifAlarm].cozumler.push(kayit);
@@ -201,7 +214,7 @@ alarmAra();
  
 document
 .getElementById("fotoSec")
-.addEventListener("change",function(e){
+.addEventListener("change", function(e){
  
 if(!aktifAlarm){
  
@@ -227,7 +240,7 @@ document.getElementById("alarmResmi").src = url;
  
 function csvIndir(){
  
-if(alarmKayitlari.length===0){
+if(alarmKayitlari.length === 0){
  
 alert("Kayıt bulunamadı.");
 return;
@@ -236,7 +249,7 @@ return;
 let csv =
 "Tarih;AlarmNo;Operatör;Vardiya;Not\n";
  
-alarmKayitlari.forEach(k=>{
+alarmKayitlari.forEach(k => {
  
 csv +=
 `"${k.tarih}";"${k.alarmNo}";"${k.operator}";"${k.vardiya}";"${k.not}"\n`;
@@ -244,8 +257,8 @@ csv +=
 });
  
 let blob = new Blob(
-["\ufeff"+csv],
-{type:"text/csv;charset=utf-8;"}
+["\ufeff" + csv],
+{ type:"text/csv;charset=utf-8;" }
 );
  
 let link =
@@ -262,51 +275,87 @@ link.click();
  
 function alarmEkle(){
  
-let alarmNo =
-document.getElementById("yeniAlarmNo").value;
+const alarmNo =
+document.getElementById("yeniAlarmNo").value.trim();
  
-let uzunAdi =
-document.getElementById("yeniAlarmAdi").value;
+const uzunAdi =
+document.getElementById("yeniAlarmAdi").value.trim();
  
-let neden =
-document.getElementById("yeniAlarmNeden").value;
+const neden =
+document.getElementById("yeniAlarmNeden").value.trim();
  
-let mudahale =
+const mudahale =
 document.getElementById("yeniAlarmMudahale")
 .value
-.split("\n");
+.split("\n")
+.filter(x => x.trim() !== "");
  
-if(alarmNo==="" || uzunAdi===""){
+if(alarmNo === ""){
  
-alert("Alarm No ve Uzun Adı gerekli.");
+alert("Alarm No giriniz.");
+return;
+}
+ 
+if(uzunAdi === ""){
+ 
+alert("Uzun Adı giriniz.");
+return;
+}
+ 
+if(alarmlar[alarmNo]){
+ 
+alert("Bu alarm zaten kayıtlı.");
 return;
 }
  
 alarmlar[alarmNo] = {
  
-uzunAdi:uzunAdi,
-neden:neden,
-mudahale:mudahale,
-fotograf:"",
-cozumler:[]
+uzunAdi: uzunAdi,
+neden: neden,
+mudahale: mudahale,
+fotograf: "",
+cozumler: []
+ 
 };
  
 kaydet();
+ 
 listeyiYukle();
  
 alert(alarmNo + " başarıyla eklendi.");
  
-document.getElementById("yeniAlarmNo").value="";
-document.getElementById("yeniAlarmAdi").value="";
-document.getElementById("yeniAlarmNeden").value="";
-document.getElementById("yeniAlarmMudahale").value="";
+document.getElementById("yeniAlarmNo").value = "";
+document.getElementById("yeniAlarmAdi").value = "";
+document.getElementById("yeniAlarmNeden").value = "";
+document.getElementById("yeniAlarmMudahale").value = "";
 }
  
 function tumVerileriSil(){
  
-if(confirm("Tüm veriler silinsin mi?")){
+if(confirm("Sonradan eklenen alarmlar ve kayıtlar silinsin mi?")){
  
-localStorage.clear();
+alarmlar =
+JSON.parse(
+JSON.stringify(varsayilanAlarmlar)
+);
+ 
+kaydet();
+ 
+location.reload();
+}
+}
+ 
+function cozumGecmisiTemizle(){
+ 
+if(confirm("Tüm çözüm geçmişleri silinsin mi?")){
+ 
+for(let kod in alarmlar){
+ 
+alarmlar[kod].cozumler = [];
+ 
+}
+ 
+kaydet();
  
 location.reload();
 }
