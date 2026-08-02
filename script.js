@@ -2,7 +2,7 @@ let aktifAlarm = null;
 let toplamSorgu = 0;
 let alarmKayitlari = [];
  
-const YONETICI_SIFRESI = "AGV2025";
+const YONETICI_SIFRESI = "Aga123";
  
 const varsayilanAlarmlar = {
  
@@ -336,26 +336,38 @@ function yoneticiKontrol() {
 let sifre =
 prompt("Yönetici şifresini giriniz");
  
+if (sifre === null) {
+return false;
+}
+ 
 return sifre === YONETICI_SIFRESI;
 }
  
-function cozumGecmisiTemizle() {
+function tumVerileriSil() {
  
 if (!yoneticiKontrol()) {
  
 alert("Hatalı şifre.");
 return;
-}
- 
-if (confirm("Tüm çözüm geçmişleri silinsin mi?")) {
- 
-for (let kod in alarmlar) {
- 
-alarmlar[kod].cozumler = [];
  
 }
+ 
+if (
+confirm(
+"Sonradan eklenen alarmlar silinsin mi?"
+)
+) {
+ 
+alarmlar =
+JSON.parse(
+JSON.stringify(varsayilanAlarmlar)
+);
  
 kaydet();
+ 
+alert(
+"Sonradan eklenen alarmlar silindi."
+);
  
 location.reload();
 }
