@@ -26,10 +26,7 @@
  
 <br><br>
  
-<input
-list="alarmlarListesi"
-id="alarmNo"
-placeholder="Alarm No Gir">
+<input list="alarmlarListesi" id="alarmNo" placeholder="Alarm No Gir">
  
 <datalist id="alarmlarListesi"></datalist>
  
@@ -41,16 +38,11 @@ placeholder="Alarm No Gir">
  
 <h3>📷 Alarm Fotoğrafı</h3>
  
-<input
-type="file"
-id="fotoSec"
-accept="image/*">
+<input type="file" id="fotoSec" accept="image/*">
  
 <br><br>
  
-<img
-id="alarmResmi"
-width="400">
+<img id="alarmResmi" width="400">
  
 <hr>
  
@@ -60,8 +52,7 @@ width="400">
 id="not"
 rows="4"
 cols="60"
-placeholder="Arızayı nasıl çözdünüz?">
-</textarea>
+placeholder="Arızayı nasıl çözdünüz?"></textarea>
  
 <br><br>
  
@@ -93,7 +84,7 @@ placeholder="Arızayı nasıl çözdünüz?">
  
 <br>
  
-<input id="yeniAlarmAdi" placeholder="Alarmın Uzun Adı">
+<input id="yeniAlarmAdi" placeholder="Uzun Adı">
  
 <br>
  
@@ -101,8 +92,7 @@ placeholder="Arızayı nasıl çözdünüz?">
 id="yeniAlarmNeden"
 rows="3"
 cols="60"
-placeholder="Alarmın Nedeni">
-</textarea>
+placeholder="Alarm Nedeni"></textarea>
  
 <br>
  
@@ -110,13 +100,18 @@ placeholder="Alarmın Nedeni">
 id="yeniAlarmMudahale"
 rows="5"
 cols="60"
-placeholder="Her satıra bir müdahale adımı gir">
-</textarea>
+placeholder="Her satıra bir müdahale yaz"></textarea>
  
 <br><br>
  
 <button onclick="alarmEkle()">
 ➕ Alarm Ekle
+</button>
+ 
+<hr>
+ 
+<button onclick="tumVerileriSil()">
+🗑️ Tüm Verileri Sil
 </button>
  
 <script src="script.js"></script>
