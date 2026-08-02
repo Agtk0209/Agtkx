@@ -2,6 +2,8 @@ let aktifAlarm = null;
 let toplamSorgu = 0;
 let alarmKayitlari = [];
  
+const YONETICI_SIFRESI = "AGV2025";
+ 
 const varsayilanAlarmlar = {
  
 "STC1 F041": {
@@ -33,7 +35,7 @@ JSON.parse(localStorage.getItem("alarmlar"))
 ||
 JSON.parse(JSON.stringify(varsayilanAlarmlar));
  
-function kaydet(){
+function kaydet() {
  
 localStorage.setItem(
 "alarmlar",
@@ -42,23 +44,23 @@ JSON.stringify(alarmlar)
  
 }
  
-function tarihSaat(){
+function tarihSaat() {
  
 document.getElementById("saat").innerHTML =
 "📅 " + new Date().toLocaleString("tr-TR");
  
 }
  
-setInterval(tarihSaat,1000);
+setInterval(tarihSaat, 1000);
 tarihSaat();
  
 listeyiYukle();
  
-function listeyiYukle(){
+function listeyiYukle() {
  
 let html = "";
  
-for(let kod in alarmlar){
+for (let kod in alarmlar) {
  
 html += `<option value="${kod}">`;
  
@@ -68,7 +70,7 @@ document.getElementById("alarmlarListesi").innerHTML =
 html;
 }
  
-function alarmAra(){
+function alarmAra() {
  
 document.getElementById("not").value = "";
  
@@ -84,7 +86,7 @@ document.getElementById("operator").value;
 let vardiya =
 document.getElementById("vardiya").value;
  
-if(!alarm){
+if (!alarm) {
  
 document.getElementById("sonuc").innerHTML =
 "<h2>❌ Alarm Bulunamadı</h2>";
@@ -99,12 +101,12 @@ toplamSorgu++;
 document.getElementById("istatistik").innerHTML =
 "Toplam Sorgu : " + toplamSorgu;
  
-if(alarm.fotograf){
+if (alarm.fotograf) {
  
 document.getElementById("alarmResmi").src =
 alarm.fotograf;
  
-}else{
+} else {
  
 document.getElementById("alarmResmi").src = "";
 }
@@ -137,7 +139,7 @@ html += "</ul>";
  
 html += "<h3>📚 Çözüm Geçmişi</h3>";
  
-if(alarm.cozumler.length === 0){
+if (alarm.cozumler.length === 0) {
  
 html += "Kayıt yok.";
 }
@@ -145,8 +147,7 @@ html += "Kayıt yok.";
 alarm.cozumler.forEach(kayit => {
  
 html += `
-<div
-style="
+<div style="
 background:#efefef;
 padding:10px;
 margin:5px;
@@ -168,9 +169,9 @@ document.getElementById("gecmis").innerHTML +=
 `<li>${new Date().toLocaleString("tr-TR")} - ${alarmNo}</li>`;
 }
  
-function notKaydet(){
+function notKaydet() {
  
-if(!aktifAlarm){
+if (!aktifAlarm) {
  
 alert("Önce alarm seçiniz.");
 return;
@@ -179,7 +180,7 @@ return;
 let not =
 document.getElementById("not").value;
  
-if(not.trim() === ""){
+if (not.trim() === "") {
  
 alert("Not giriniz.");
 return;
@@ -214,9 +215,9 @@ alarmAra();
  
 document
 .getElementById("fotoSec")
-.addEventListener("change", function(e){
+.addEventListener("change", function (e) {
  
-if(!aktifAlarm){
+if (!aktifAlarm) {
  
 alert("Önce alarm seçiniz.");
 return;
@@ -224,7 +225,7 @@ return;
  
 let dosya = e.target.files[0];
  
-if(dosya){
+if (dosya) {
  
 let url =
 URL.createObjectURL(dosya);
@@ -235,12 +236,11 @@ kaydet();
  
 document.getElementById("alarmResmi").src = url;
 }
- 
 });
  
-function csvIndir(){
+function csvIndir() {
  
-if(alarmKayitlari.length === 0){
+if (alarmKayitlari.length === 0) {
  
 alert("Kayıt bulunamadı.");
 return;
@@ -256,9 +256,10 @@ csv +=
  
 });
  
-let blob = new Blob(
+let blob =
+new Blob(
 ["\ufeff" + csv],
-{ type:"text/csv;charset=utf-8;" }
+{ type: "text/csv;charset=utf-8;" }
 );
  
 let link =
@@ -273,7 +274,7 @@ link.download =
 link.click();
 }
  
-function alarmEkle(){
+function alarmEkle() {
  
 const alarmNo =
 document.getElementById("yeniAlarmNo").value.trim();
@@ -290,19 +291,19 @@ document.getElementById("yeniAlarmMudahale")
 .split("\n")
 .filter(x => x.trim() !== "");
  
-if(alarmNo === ""){
+if (alarmNo === "") {
  
 alert("Alarm No giriniz.");
 return;
 }
  
-if(uzunAdi === ""){
+if (uzunAdi === "") {
  
 alert("Uzun Adı giriniz.");
 return;
 }
  
-if(alarmlar[alarmNo]){
+if (alarmlar[alarmNo]) {
  
 alert("Bu alarm zaten kayıtlı.");
 return;
@@ -330,26 +331,25 @@ document.getElementById("yeniAlarmNeden").value = "";
 document.getElementById("yeniAlarmMudahale").value = "";
 }
  
-function tumVerileriSil(){
+function yoneticiKontrol() {
  
-if(confirm("Sonradan eklenen alarmlar ve kayıtlar silinsin mi?")){
+let sifre =
+prompt("Yönetici şifresini giriniz");
  
-alarmlar =
-JSON.parse(
-JSON.stringify(varsayilanAlarmlar)
-);
- 
-kaydet();
- 
-location.reload();
-}
+return sifre === YONETICI_SIFRESI;
 }
  
-function cozumGecmisiTemizle(){
+function cozumGecmisiTemizle() {
  
-if(confirm("Tüm çözüm geçmişleri silinsin mi?")){
+if (!yoneticiKontrol()) {
  
-for(let kod in alarmlar){
+alert("Hatalı şifre.");
+return;
+}
+ 
+if (confirm("Tüm çözüm geçmişleri silinsin mi?")) {
+ 
+for (let kod in alarmlar) {
  
 alarmlar[kod].cozumler = [];
  
