@@ -331,18 +331,6 @@ document.getElementById("yeniAlarmNeden").value = "";
 document.getElementById("yeniAlarmMudahale").value = "";
 }
  
-function yoneticiKontrol() {
- 
-let sifre =
-prompt("Yönetici şifresini giriniz");
- 
-if (sifre === null) {
-return false;
-}
- 
-return sifre === YONETICI_SIFRESI;
-}
- 
 function tumVerileriSil() {
  
 if (!yoneticiKontrol()) {
@@ -353,15 +341,27 @@ return;
 }
  
 if (
-confirm(
+!confirm(
 "Sonradan eklenen alarmlar silinsin mi?"
 )
 ) {
+return;
+}
  
-alarmlar =
+let yeniListe = {};
+ 
+for (let kod in varsayilanAlarmlar) {
+ 
+yeniListe[kod] =
 JSON.parse(
-JSON.stringify(varsayilanAlarmlar)
+JSON.stringify(
+varsayilanAlarmlar[kod]
+)
 );
+ 
+}
+ 
+alarmlar = yeniListe;
  
 kaydet();
  
@@ -369,6 +369,7 @@ alert(
 "Sonradan eklenen alarmlar silindi."
 );
  
+listeyiYukle();
+ 
 location.reload();
-}
 }
