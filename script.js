@@ -26,17 +26,25 @@ mudahale: [
  
 fotograf: "",
 cozumler: []
+ 
 },
- "AW1 F078": {
+ 
+"AW1 F078": {
+ 
 uzunAdi: "No Motion Detected",
-neden: "Aw 1 tarafında uzun süre istekte olan feeder var.",
+ 
+neden:
+"AW1 tarafında uzun süre istekte olan feeder var.",
+ 
 mudahale: [
-"İstekte olan feederlerı WMS ''Feeder Overview'' sayfasından kontrol et",
-"İstekte olan feederın buffer alanında tütünü olduğundan emin ol."
+"İstekte olan feederleri WMS 'Feeder Overview' sayfasından kontrol et",
+"İstekte olan feederın buffer alanında tütün olduğundan emin ol",
 "Feeder içini kameralardan kontrol edip en kısa zamanda beslenmesini sağla"
 ],
+ 
 fotograf: "",
 cozumler: []
+ 
 }
  
 };
