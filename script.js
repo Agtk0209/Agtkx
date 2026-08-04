@@ -403,6 +403,8 @@ return sifre === YONETICI_SIFRESI;
 }
 function kayitliAlarmlariGoster() {
  
+alert("Buton çalıştı");
+ 
 let html =
 "<h3>Toplam Alarm Sayısı: " +
 Object.keys(alarmlar).length +
