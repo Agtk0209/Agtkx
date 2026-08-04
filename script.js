@@ -26,7 +26,7 @@ mudahale: [
  
 fotograf: "",
 cozumler: []
-}
+},
  "AW1 F078": {
 uzunAdi: "No Motion Detected",
 neden: "Aw 1 tarafında uzun süre istekte olan feeder var.",
