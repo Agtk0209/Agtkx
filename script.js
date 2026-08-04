@@ -26,7 +26,6 @@ mudahale: [
  
 fotograf: "",
 cozumler: []
- 
 },
  
 "AW1 F078": {
@@ -38,13 +37,12 @@ neden:
  
 mudahale: [
 "İstekte olan feederleri WMS 'Feeder Overview' sayfasından kontrol et",
-"İstekte olan feederın buffer alanında tütün olduğundan emin ol",
-"Feeder içini kameralardan kontrol edip en kısa zamanda beslenmesini sağla"
+"İstekte olan feederın buffer alanında tütün olduğundan emin ol.",
+"Feader içini kameralardan kontrol edip en kısa zamanda beslenmesini sağla"
 ],
  
 fotograf: "",
 cozumler: []
- 
 }
  
 };
