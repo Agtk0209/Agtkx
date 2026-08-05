@@ -4109,6 +4109,26 @@ let aktifKategori = null;
  
 function kategoriGoster(prefix) {
  
+const butonlar = [
+"STC1",
+"STC2",
+"AW1",
+"AW2",
+"CS1",
+"CS2"
+];
+ 
+butonlar.forEach(k => {
+ 
+const btn =
+document.getElementById("btn" + k);
+ 
+if (btn) {
+btn.innerHTML = "▶ " + k;
+}
+ 
+});
+ 
 if (aktifKategori === prefix) {
  
 document.getElementById("alarmListesi").innerHTML = "";
@@ -4120,10 +4140,13 @@ return;
  
 aktifKategori = prefix;
  
+document.getElementById("btn" + prefix).innerHTML =
+"▼ " + prefix;
+ 
 let html = "";
  
 let sayac = 0;
- 
+  
 for (let kod in alarmlar) {
  
 if (kod.startsWith(prefix)) {
