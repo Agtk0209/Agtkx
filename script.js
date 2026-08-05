@@ -2314,7 +2314,388 @@ fotograf: "",
 cozumler: []
 },
 
+"AW1 F001": {
+uzunAdi: "Ayrılmış",
+neden: "Rezerve alarm",
+mudahale: [
+"Kullanılmayan alarm kodu"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F002": {
+uzunAdi: "Arıza AW1'de güç kaynağı 400V/24VDC - G1",
+neden: "Kısa devre veya aşırı güç yükü",
+mudahale: [
+"Nedeni bulun",
+"Kabloları kontrol edin",
+"Modülleri ve bileşenleri aşırı yük açısından kontrol edin",
+"Sorunu giderin",
+"Paneldeki veya koridor kabinindeki sıfırlama tuşu ile arızayı sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F003": {
+uzunAdi: "Arıza harekete geçen AW1'de elektronik sigorta 24VDC - F2",
+neden: "Kısa devre veya aşırı güç yükü",
+mudahale: [
+"Nedeni bulun",
+"Kabloları kontrol edin",
+"Modülleri ve bileşenleri aşırı yük açısından kontrol edin",
+"Sorunu giderin",
+"Paneldeki veya koridor kabinindeki sıfırlama tuşu ile arızayı sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F004": {
+uzunAdi: "Devreye giren motor devre kesici Q11 için movais S-istemi",
+neden: "Kısa devre veya aşırı güç yükü",
+mudahale: [
+"Nedeni bulun",
+"Kabloları kontrol edin",
+"Modülleri ve bileşenleri aşırı yük açısından kontrol edin",
+"Sorunu giderin",
+"Paneldeki veya koridor kabinindeki sıfırlama tuşu ile arızayı sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F005": {
+uzunAdi: "Arıza aşırı yük taşıma X-ünitesi F21A F21B",
+neden: "Kısa devre veya aşırı güç yükü",
+mudahale: [
+"Nedeni bulun",
+"Kabloları kontrol edin",
+"Modülleri ve bileşenleri aşırı yük açısından kontrol edin",
+"Sorunu giderin",
+"Paneldeki veya koridor kabinindeki sıfırlama tuşu ile arızayı sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
 
+"AW1 F006": {
+uzunAdi: "Arıza aşırı yük veya fren direnci AW1 (direnç distal) G11R1 F21A F21B",
+neden: "Kısa devre veya aşırı güç yükü",
+mudahale: [
+"Nedeni bulun",
+"Kabloları kontrol edin",
+"Mevcut ortamdaki tüm modülleri ve bileşenleri aşırı güç yüklemesi açısından kontrol edin",
+"Sorunu giderin",
+"Paneldeki veya koridor kabinindeki sıfırlama tuşu ile arızayı sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+
+"AW1 F007": {
+uzunAdi: "Devreye giren motor devre kesici Q21 taşıma X-aksı AW1",
+neden: "Kısa devre veya aşırı güç yükü",
+mudahale: [
+"Nedeni bulun",
+"Kabloları kontrol edin",
+"Mevcut ortamdaki tüm modülleri ve bileşenleri aşırı güç yüklemesi için kontrol edin",
+"Sorunu giderin",
+"Paneldeki veya koridor kabinindeki sıfırlama tuşu ile arızayı sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F008": {
+uzunAdi: "Devreye giren motor devre kesici Q31 kaldırma X-aksı AW1",
+neden: "Kısa devre veya aşırı güç yükü",
+mudahale: [
+"Nedeni bulun",
+"Kabloları kontrol edin",
+"Mevcut ortamdaki tüm modülleri ve bileşenleri aşırı güç yüklemesi için kontrol edin",
+"Sorunu giderin",
+"Paneldeki veya koridor kabinindeki sıfırlama tuşu ile arızayı sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F009": {
+uzunAdi: "Devreye giren motor devre kesici Q41 veya Q42 teleskop Z-aksı AW1",
+neden: "Kısa devre veya aşırı güç yükü",
+mudahale: [
+"Nedeni bulun",
+"Kabloları kontrol edin",
+"Mevcut ortamdaki tüm modülleri ve bileşenleri aşırı güç yüklemesi için kontrol edin",
+"Sorunu giderin",
+"Paneldeki veya koridor kabinindeki sıfırlama tuşu ile arızayı sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F010": {
+uzunAdi: "Devreye giren motor devre kesici Q41 veya Q42 teleskop Z-aksı AW1",
+neden: "Kısa devre veya aşırı güç yükü",
+mudahale: [
+"Nedeni bulun",
+"Kabloları kontrol edin",
+"Mevcut ortamdaki tüm modülleri ve bileşenleri aşırı güç yüklemesi için kontrol edin",
+"Sorunu giderin",
+"Paneldeki veya koridor kabinindeki sıfırlama tuşu ile arızayı sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F011": {
+uzunAdi: "Ayrılmış",
+neden: "Rezerve alarm",
+mudahale: [
+"Kullanılmayan alarm kodu"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F012": {
+uzunAdi: "Ayrılmış",
+neden: "Rezerve alarm",
+mudahale: [
+"Kullanılmayan alarm kodu"
+],
+fotograf: "",
+cozumler: []
+},
+
+"AW1 F013": {
+uzunAdi: "Dışarıdan acil durdurma (K2/K3) - AW1",
+neden: "Acil durdurma için iletken ray voltaj altında değil",
+mudahale: [
+"Alleyway alanı içindeyseniz Alleyway'i manuel moda getirin",
+"Alleyway alanının dışındaysanız ve Alleyway otomatikteyse makaralı konveyör kabininin sinyallerini kontrol edin",
+"Ana kabinde 230V kaybı olup olmadığını kontrol edin",
+"L5-2 bölgesini kontrol edin",
+"Koridordaki powerrail üzerindeki sıra hatalarını kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F014": {
+uzunAdi: "Acil durdurma - S6 kapı dolabı - AW1",
+neden: "Dolap kapağındaki acil durdurma itilmiş",
+mudahale: [
+"Acil durdurmayı çekin ve çıkarın",
+"Alleyway'i sıfırlayın",
+"Paneldeki veya Alleyway kabinindeki sıfırlama tuşunu kullanın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F015": {
+uzunAdi: "Movisafe G21A1'den STO, izleme hızı X-aksı - AW1",
+neden: "Movisafe'ten gelen güvenlik sinyalleri tam değil veya Alleyway PLC ile bağlantıyı kaybetti",
+mudahale: [
+"Tüm hız emniyet şalterlerinin doğru şekilde çalıştığını kontrol edin",
+"Alleyway'i sıfırlayın",
+"Paneldeki veya Alleyway kabinindeki sıfırlama tuşunu kullanın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F016": {
+uzunAdi: "Acil durdurma mobil paneli - AW1",
+neden: "Mobil paneldeki acil durdurma itilmiş",
+mudahale: [
+"Acil durdurmayı çekin ve çıkarın",
+"Alleyway'i sıfırlayın",
+"Paneldeki veya Alleyway kabinindeki sıfırlama tuşunu kullanın",
+"Panel fişe takılı değilse bu arızayı alırsınız",
+"Alleyway'i manuel modda kullanmak için mobil panel gereklidir"
+],
+fotograf: "",
+cozumler: []
+},
+
+"AW1 F017": {
+uzunAdi: "Arıza sensörü teleskop Z-aksı merkez B41 veya B42 - AW1",
+neden: "Çatal senkronize değil, bir taraf tam ortada değil",
+mudahale: [
+"Algılayıcıları pozisyon için kontrol edin, çatal ortada olmalıdır",
+"Çatalın bir tarafı ortada değilse Alleyway'i manuel moda alın",
+"Ana şalteri açın",
+"Mobil panelin arka tarafındaki 3 konumlu anahtara basın",
+"Çatalları otomatik olarak orta konuma getirin",
+"Manuel modda sürüş sadece 3 konumlu anahtarla yapılır",
+"Alleyway'i sıfırlayın",
+"Paneldeki veya Alleyway kabinindeki sıfırlama tuşunu kullanın"
+],
+fotograf: "",
+cozumler: []
+},
+
+"AW1 F018": {
+uzunAdi: "Arıza eğim sensörü A-aksı merkez B51 veya B52 - AW1",
+neden: "Bu sensörlerden biri çalışmıyor ve diğeri çalışmıyor",
+mudahale: [
+"Sensörü kontrol edin",
+"Bir taraf çalışmıyorsa Alleyway'i manuel moda alın",
+"Ana anahtarı açın",
+"Manuel moda (A-AXIS) gidin",
+"Mobil panelde manuel modu başlatın",
+"A-aksını orta konuma sürün",
+"Ayrıca Z-EKSENİ'ni orta konuma geri sürün",
+"Alleyway'i sıfırlayın",
+"Paneldeki veya Alleyway kabinindeki sıfırlama tuşunu kullanın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F019": {
+uzunAdi: "Arıza hız limiti %70 M21B3",
+neden: "Alleyway'i hızlandırmak için ön ve arka alanda çalıştırılır",
+mudahale: [
+"Hız emniyet şalterinin %70 doğru şekilde çalışıp çalışmadığını kontrol edin",
+"Alleyway'i sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F020": {
+uzunAdi: "Arıza hız limiti %50 M21B4",
+neden: "Alleyway'i hızlandırmak için ön ve arka alanda çalıştırılır",
+mudahale: [
+"Hız emniyet şalterinin %50 doğru şekilde çalışıp çalışmadığını kontrol edin",
+"Alleyway'i sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F021": {
+uzunAdi: "Arıza hız limiti %30 M21B4",
+neden: "Alleyway'i hızlandırmak için ön ve arka alanda çalıştırılır",
+mudahale: [
+"Hız emniyet şalterinin %30 doğru şekilde çalışıp çalışmadığını kontrol edin",
+"Alleyway'i sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F022": {
+uzunAdi: "Arıza güvenlik giriş modülü 1734-IB8S",
+neden: "Emniyet giriş modülünde bir arıza var",
+mudahale: [
+"Alleyway PLC'nin giriş modüllerini kontrol edin",
+"Arızalı modülü tespit edin"
+],
+fotograf: "",
+cozumler: []
+},
+
+"AW1 F023": {
+uzunAdi: "Arıza güvenlik çıkış modülü 1734-OB8S",
+neden: "Emniyet çıkış modülünde bir arıza var",
+mudahale: [
+"Alleyway PLC'nin çıkış modüllerini kontrol edin",
+"Arızalı modülü tespit edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F024": {
+uzunAdi: "Haberleşme arızası Moviaxis sistemi G10",
+neden: "Moviaxis sistemi ile iletişim arızalı",
+mudahale: [
+"Moviaxis sistemindeki arızaları kontrol edin",
+"Moviaxis sisteminin gücünü kontrol edin",
+"Moviaxis sisteminin kablolarını kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F025": {
+uzunAdi: "Adım prosedüründe arıza veya yarı otomatik adım 1",
+neden: "Alleyway'in bir otomatik adım içerisinde bir arızası vardır",
+mudahale: [
+"Diğer arıza numaralarını kontrol edin",
+"Alleyway'in durumunu kontrol edin",
+"Aktif arızaları giderin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F026": {
+uzunAdi: "Arıza üst SELE algılandı, seçme komutu sırası 1 - AW1",
+neden: "Alleyway alt seleyi toplamak için bir komut almıştır ancak üst sele doludur",
+mudahale: [
+"WMS alanı kilitler ve otomatik olarak yeni bir komut gönderir",
+"Bundan sonra arıza otomatik olarak sonlanır"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F027": {
+uzunAdi: "Arıza daha düşük SELE bulunamadı, bırakma komutu sırası 2 - AW1",
+neden: "Alleyway üst kısmı bırakmak için bir komut aldı ancak alt kısım boş",
+mudahale: [
+"WMS alanı kilitler ve otomatik olarak yeni bir komut gönderir",
+"Bundan sonra arıza otomatik olarak sonlanır"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F028": {
+uzunAdi: "Arıza kıskaç boş bırakma veya boşaltma komutu",
+neden: "Alleyway bir bırakma komutu aldı ama Alleyway dolu değil",
+mudahale: [
+"WMS bir arıza haline gelir ve yeni bir sipariş gönderir",
+"Bundan sonra arıza otomatik olarak sonlanır"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F029": {
+uzunAdi: "Arıza dolu çatal toplama komutu",
+neden: "Alleyway bir toplama komutu aldı ama Alleyway dolu",
+mudahale: [
+"WMS bir arıza haline gelir ve yeni bir sipariş gönderir",
+"Bundan sonra arıza otomatik olarak sonlanır"
+],
+fotograf: "",
+cozumler: []
+},
+
+"AW1 F030": {
+uzunAdi: "Arıza konumu kıskacı, Z ve A-aksı ortada değil",
+neden: "Yeni bir komut başladığında Z veya A aksı ortada değil",
+mudahale: [
+"Alleyway'i manuel modda çalıştırın",
+"Ana şalteri açın",
+"Manuel moda girin (Z_AXIS ve A_AXIS)",
+"Mobil paneldeki manuel modu başlatın",
+"Z-aksını ve A-aksını orta konuma sürün",
+"Manuel modda sürüş yalnızca mobil panelin arka tarafındaki 3 konumlu tuşla çalışır",
+"Bundan sonra Alleyway'i sıfırlayın",
+"Paneldeki veya Alleyway kabinindeki sıfırlama tuşu ile arızayı sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
 
 "AW1 F078": {
  
