@@ -2697,6 +2697,209 @@ fotograf: "",
 cozumler: []
 },
 
+"AW1 F031": {
+uzunAdi: "Arıza bırakma veya devirme için arıza koordinatları",
+neden: "Yeni bir komut başladığında WMS'den gelen koordinatlar yanlıştır",
+mudahale: [
+"WMS sistemindeki araç hareket sırasını kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F032": {
+uzunAdi: "Arıza hareket için ayrı noktaların kontrol etme",
+neden: "WMS'den gelen koordinatlar otomatik alma için yanlıştır",
+mudahale: [
+"WMS sistemindeki araç hareket sırasını kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F033": {
+uzunAdi: "Arıza sırası verileri",
+neden: "WMS'den gelen komut verileri yanlış",
+mudahale: [
+"WMS sistemindeki araç için hareket sırasını kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F034": {
+uzunAdi: "Arıza kinematik Z-aksı ve bağlı birim senkronize çalışmıyor",
+neden: "Ana ve bağlı birim aksı senkronize çalışmıyor",
+mudahale: [
+"Sıfırlama tuşuna basın",
+"Kabin kapısını açın",
+"Geri girin ve 3 konumlu anahtara basın",
+"Çatallar otomatik olarak senkronize olacaktır",
+"Fark büyük olduğunda işlemi manuel yapın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F035": {
+uzunAdi: "Arıza devrilmede arıza, devrilme modunda bağlı birim Z için başlama sinyali artık etkin değil",
+neden: "Bağlı birim Z için sinyal aldı ancak boşaltma artık aktif değil",
+mudahale: [
+"Manuel moda gidin",
+"3 konumlu anahtarı değiştirin",
+"Ekseni otomatik olarak aynı konumda hareket ettirin",
+"Daha sonra çatalları manuel modda çalıştırın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F036": {
+uzunAdi: "Ayrılmış",
+neden: "Rezerve alarm",
+mudahale: [
+"Kullanılmayan alarm kodu"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F037": {
+uzunAdi: "Arıza X-aksı için Movisafe'den STO",
+neden: "Movisafe'ten gelen güvenlik sinyalleri tamam değil veya Alleyway PLC ile bağlantı kaybolmuştur",
+mudahale: [
+"Tüm hız emniyet şalterlerinin doğru şekilde çalıştığını kontrol edin",
+"Alleyway'i sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F038": {
+uzunAdi: "Arıza basınç BG1B1",
+neden: "Ana şalter açık ancak makinede basınç yok",
+mudahale: [
+"Kompresörü ve hava kablolarını kontrol edin",
+"400 V güç olmadığında uzun süre sonra kompresör boş olur",
+"Basıncın oluşması birkaç dakika sürebilir"
+],
+fotograf: "",
+cozumler: []
+},
+
+"AW1 F039": {
+uzunAdi: "Devreye giren motor devre kesici Q3 kompresör AW1",
+neden: "Kısa devre veya aşırı güç yükü",
+mudahale: [
+"Nedeni bulun",
+"Kabloları kontrol edin",
+"Mevcut ortamdaki tüm modülleri ve bileşenleri aşırı güç yüklemesi için kontrol edin",
+"Sorunu giderin",
+"Paneldeki veya Alleyway kabinindeki sıfırlama tuşu ile arızayı sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F040": {
+uzunAdi: "Arıza fren Z ana K41'i tekrar kontrol edin",
+neden: "Kontaktörlerin geçiş komutu vardır ancak kontaktörler çalışmaz",
+mudahale: [
+"Çapraz mekiğin kontaktörlerini kontrol edin",
+"24V gerilimin tam olduğunu doğrulayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F041": {
+uzunAdi: "Arıza fren Z bağlı birim K42'yi tekrar kontrol edin",
+neden: "Kontaktörlerin geçiş komutu vardır ancak kontaktörler çalışmaz",
+mudahale: [
+"Çapraz mekiğin kontaktörlerini kontrol edin",
+"24V gerilimin tam olduğunu doğrulayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F042": {
+uzunAdi: "Arıza fren A ana K51 tekrar kontrol edin",
+neden: "Kontaktörlerin geçiş komutu vardır ancak kontaktörler çalışmaz",
+mudahale: [
+"Çapraz mekiğin kontaktörlerini kontrol edin",
+"24V gerilimin tam olduğunu doğrulayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F043": {
+uzunAdi: "Arıza fren A bağlı birim K52 tekrar kontrol edin",
+neden: "Kontaktörlerin geçiş komutu vardır ancak kontaktörler çalışmaz",
+mudahale: [
+"Çapraz mekiğin kontaktörlerini kontrol edin",
+"24V gerilimin tam olduğunu doğrulayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F044": {
+uzunAdi: "Arıza fren X-aksı K21 tekrar kontrol edin",
+neden: "Kontaktörlerin geçiş komutu vardır ancak kontaktörler çalışmaz",
+mudahale: [
+"Çapraz mekiğin kontaktörlerini kontrol edin",
+"24V gerilimin tam olduğunu doğrulayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F045": {
+uzunAdi: "Arıza fren Y-aksı K31 tekrar kontrol edin",
+neden: "Kontaktörlerin geçiş komutu vardır ancak kontaktörler çalışmaz",
+mudahale: [
+"Çapraz mekiğin kontaktörlerini kontrol edin",
+"24V gerilimin tam olduğunu doğrulayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F046": {
+uzunAdi: "Arızalar Z ana G41 tekrar kontrol edin",
+neden: "Kontaktörlerin geçiş komutu vardır ancak kontaktörler çalışmaz",
+mudahale: [
+"Çapraz mekiğin kontaktörlerini kontrol edin",
+"24V gerilimin tam olduğunu doğrulayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F047": {
+uzunAdi: "Z bağlı birim G42'deki arızaları tekrar kontrol edin",
+neden: "Kontaktörlerin geçiş komutu vardır ancak kontaktörler çalışmaz",
+mudahale: [
+"Çapraz mekiğin kontaktörlerini kontrol edin",
+"24V gerilimin tam olduğunu doğrulayın"
+],
+fotograf: "",
+cozumler: []
+},
+
+"AW1 F048": {
+uzunAdi: "A ana G51 arızalarını tekrar kontrol edin",
+neden: "Kontaktörlerin geçiş komutu vardır, ancak kontaktörler çalışmaz",
+mudahale: [
+"Çapraz mekiğin kontaktörlerini kontrol edin",
+"24V gerilimin tam olduğunu doğrulayın"
+],
+fotograf: "",
+cozumler: []
+},
+
 "AW1 F078": {
  
 uzunAdi: "No Motion Detected",
