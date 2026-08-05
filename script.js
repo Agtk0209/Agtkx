@@ -1,4 +1,3 @@
-
 let aktifAlarm = null;
 let toplamSorgu = 0;
 let alarmKayitlari = [];
@@ -427,3 +426,6 @@ ${alarmlar[kod].uzunAdi}
 `;
 }
  
+document.getElementById("alarmListesi").innerHTML =
+html;
+}
