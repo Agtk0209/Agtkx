@@ -1970,6 +1970,352 @@ fotograf: "",
 cozumler: []
 },
 
+"STC2 F065": {
+uzunAdi: "Arıza iletişim X-aksı G21",
+neden: "Dönüştürücü ile iletişim arızalı",
+mudahale: [
+"Dönüştürücüyü kontrol edin",
+"Kabloyu kontrol edin",
+"Dönüştürücünün güç kaynağını kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F066": {
+uzunAdi: "Arıza haberleşme Y-aksı G31",
+neden: "Dönüştürücü ile iletişim arızalı",
+mudahale: [
+"Dönüştürücüyü kontrol edin",
+"Kabloyu kontrol edin",
+"Dönüştürücünün güç kaynağını kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F067": {
+uzunAdi: "Arıza haberleşme Z1-aksı G41",
+neden: "Dönüştürücü ile iletişim arızalı",
+mudahale: [
+"Dönüştürücüyü kontrol edin",
+"Kabloyu kontrol edin",
+"Dönüştürücünün güç kaynağını kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F068": {
+uzunAdi: "Arıza iletişim Z2-aksı G51",
+neden: "Dönüştürücü ile iletişim arızalı",
+mudahale: [
+"Dönüştürücüyü kontrol edin",
+"Kabloyu kontrol edin",
+"Dönüştürücünün güç kaynağını kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F069": {
+uzunAdi: "Arıza iletişim I/O A5003",
+neden: "Allen Bradley I/O modülü ile iletişim arızalı",
+mudahale: [
+"I/O modülünü kontrol edin",
+"Kabloyu kontrol edin",
+"Dönüştürücünün güç kaynağını kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F070": {
+uzunAdi: "Ayrılmış",
+neden: "Rezerve alarm",
+mudahale: [
+"Kullanılmayan alarm kodu"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F071": {
+uzunAdi: "Ayrılmış",
+neden: "Rezerve alarm",
+mudahale: [
+"Kullanılmayan alarm kodu"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F072": {
+uzunAdi: "Ayrılmış",
+neden: "Rezerve alarm",
+mudahale: [
+"Kullanılmayan alarm kodu"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F073": {
+uzunAdi: "Arıza veya uyarı akü modülü C2 aküsü",
+neden: "Pil modülünde bir arıza var",
+mudahale: [
+"Modülün voltajını ölçün",
+"Modül voltajı düşükse modülü değiştirin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F074": {
+uzunAdi: "Arıza veya uyarı akü modülü C2 sıcaklığı 75°C'nin üzerinde",
+neden: "Akü modülü çok sıcak",
+mudahale: [
+"Akü modülünü kontrol edin",
+"Kusurlu olduğunda değiştirin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F075": {
+uzunAdi: "Arıza pozisyon X-aksı maksimum konumun üzerinde",
+neden: "İstifleme aracı için X konumu yanlış",
+mudahale: [
+"Araç için WMS'den gelen taşıma komutunu kontrol edin",
+"Belki de komut araç üzerinde silinmelidir"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F076": {
+uzunAdi: "Arıza X-aksı konumu minimum konumun altında",
+neden: "İstifleme aracı için X konumu yanlış",
+mudahale: [
+"Araç için WMS'den gelen taşıma komutunu kontrol edin",
+"Belki de komut araç üzerinde silinmelidir"
+],
+fotograf: "",
+cozumler: []
+},
+
+"STC2 F077": {
+uzunAdi: "Arıza Y-aksı konumu maksimum konumun üzerinde",
+neden: "İstifleme aracı için Y konumu yanlış",
+mudahale: [
+"Araç için WMS'den gelen taşıma komutunu kontrol edin",
+"Belki de komut araç üzerinde silinmelidir"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F078": {
+uzunAdi: "Arıza Y-aksı konumu minimum konumun altında",
+neden: "İstifleme aracı için Y konumu yanlış",
+mudahale: [
+"Araç için WMS'den gelen taşıma komutunu kontrol edin",
+"Belki de komut araç üzerinde silinmelidir"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F079": {
+uzunAdi: "Arıza Z1-aksı konumu maksimum konumun üzerinde, normal derinlik",
+neden: "İstifleme aracı için çatal Z1 konumu yanlış",
+mudahale: [
+"Araç için WMS'den gelen taşıma komutunu kontrol edin",
+"Belki de komut araç üzerinde silinmelidir"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F080": {
+uzunAdi: "Arıza Z1-aksı konumu minimum konumun altında, normal derinlik",
+neden: "İstifleme aracı için çatal Z1 konumu yanlış",
+mudahale: [
+"Araç için WMS'den gelen taşıma komutunu kontrol edin",
+"Belki de komut araç üzerinde silinmelidir"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F081": {
+uzunAdi: "Arıza Z2-aksı konumu maksimum konumun üzerinde, normal derinlik",
+neden: "İstifleme aracı için çatal Z2 konumu yanlış",
+mudahale: [
+"Araç için WMS'den gelen taşıma komutunu kontrol edin",
+"Belki de komut araç üzerinde silinmelidir"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F082": {
+uzunAdi: "Arıza Z2-aksı konumu minimum konumun altında, çift derinlik",
+neden: "İstifleme aracı için çatal Z2 konumu yanlış",
+mudahale: [
+"Araç için WMS'den gelen taşıma komutunu kontrol edin",
+"Belki de komut araç üzerinde silinmelidir"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F083": {
+uzunAdi: "Dikkat anahtarlı şalter bypass modunda",
+neden: "Anahtarlı şalter bypass konumunda",
+mudahale: [
+"Bypass moduna ihtiyacınız olmadığında anahtarlı şalteri diğer yöne çevirin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F084": {
+uzunAdi: "Autostep'te arıza, çatal orta konumda değil",
+neden: "Autostep'teki bir arıza nedeniyle çatal orta konumda değildir",
+mudahale: [
+"Çatalı manuel modda geriye doğru çalıştırın",
+"Arızayı sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+
+"STC2 F085": {
+uzunAdi: "Arıza bir komut başladığında çatal ortada değil",
+neden: "Yeni bir komut başladığında çatal ortada değil",
+mudahale: [
+"Çatalı manuel modda geriye doğru çalıştırın",
+"Arızayı sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F086": {
+uzunAdi: "Ayrılmış",
+neden: "Rezerve alarm",
+mudahale: [
+"Kullanılmayan alarm kodu"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F087": {
+uzunAdi: "Ayrılmış",
+neden: "Rezerve alarm",
+mudahale: [
+"Kullanılmayan alarm kodu"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F088": {
+uzunAdi: "Ayrılmış",
+neden: "Rezerve alarm",
+mudahale: [
+"Kullanılmayan alarm kodu"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F089": {
+uzunAdi: "Uyarı her iki mobil panel de aynı resim alanında",
+neden: "Her iki mobil panel de aynı resim alanında. Böylece panel manuel modlar için kullanılamaz",
+mudahale: [
+"STC2'ye ait olmayan mobil paneldeki resmi değiştirin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F090": {
+uzunAdi: "Arıza RC02 alanı boş, sensör M41B9'un sağ tarafını kontrol edin ve komutu WMS'den tekrar gönderin",
+neden: "İstifleme aracı toplama komutu alır, ancak alan boştur",
+mudahale: [
+"Kaldıraç platformundaki sensörü kontrol edin",
+"Hareket sırasında WMS'den komutu tekrar gönderin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F091": {
+uzunAdi: "Arıza RC02 alanı doludur, M41B8 sensörünü kontrol edin ve komutu WMS'den tekrar gönderin",
+neden: "İstifleme aracı bırakma komutu alır, ancak alan doludur",
+mudahale: [
+"Kaldıraç platformundaki sensörü kontrol edin",
+"Hareket sırasında WMS'den komutu tekrar gönderin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F092": {
+uzunAdi: "Ayrılmış",
+neden: "Rezerve alarm",
+mudahale: [
+"Kullanılmayan alarm kodu"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F093": {
+uzunAdi: "Ayrılmış",
+neden: "Rezerve alarm",
+mudahale: [
+"Kullanılmayan alarm kodu"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F094": {
+uzunAdi: "Ayrılmış",
+neden: "Rezerve alarm",
+mudahale: [
+"Kullanılmayan alarm kodu"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F095": {
+uzunAdi: "Ayrılmış",
+neden: "Rezerve alarm",
+mudahale: [
+"Kullanılmayan alarm kodu"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F096": {
+uzunAdi: "Ayrılmış",
+neden: "Rezerve alarm",
+mudahale: [
+"Kullanılmayan alarm kodu"
+],
+fotograf: "",
+cozumler: []
+},
+
+
+
 "AW1 F078": {
  
 uzunAdi: "No Motion Detected",
