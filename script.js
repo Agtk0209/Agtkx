@@ -3290,10 +3290,14 @@ cozumler: []
  
 "AW1 F079": {
 uzunAdi: "Arıza kıskaç sıkma sensörleri B5131, B5132 ve B514",
-neden: "B5131, B5132 ve B514 sensörlerinden biri ya da hiçbiri çalışmıyor",
+neden: "B5131, B5132 ve B514 sensörlerinden biri veya hiçbiri çalışmıyor",
 mudahale: [
 "Sensörleri kontrol edin",
-"Kıskaç kolları son konumuna ulaşamadı"
+"Kıskaç kolları bitiş konumuna ulaşamadı",
+"Sele ve kıskaç konumunu kontrol edin",
+"Gerektiğinde manuel olarak ayarlayın",
+"Seleyi orta konuma getirin",
+"Arızadan çıkar ve otomatik olarak sonlanır"
 ],
 fotograf: "",
 cozumler: []
@@ -3349,6 +3353,349 @@ uzunAdi: "Arıza bağlantı WMS, komut yok, ana ekran AW'de sıfırlama",
 neden: "Depodan gelen komutta ters giden bir şeyler var",
 mudahale: [
 "Alleyway'den ana ekrandaki yumuşak düğmeyle sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+
+"AW1 F085": {
+uzunAdi: "Arıza tanımsız konum kıskacı, sensörleri kontrol edin - AW1",
+neden: "Her iki sensör (kıskaç açık ve kıskaç kapalı) aynı anda çalışıyor",
+mudahale: [
+"Sensörleri kontrol edin",
+"Sensör sadece açık veya kapalı olarak çalıştırılır",
+"Alleyway'i manuel moda alın",
+"Ana şalteri açın",
+"Manuel moda girin (vanalar)",
+"Mobil panelde manuel modu başlatın",
+"Kıskacı açın ve çatalı orta konuma sürün",
+"Manuel modda sürüş yalnızca mobil panelin arka tarafındaki 3 konumlu tuşla yapılır",
+"Alleyway'i sıfırlayın",
+"Paneldeki veya Alleyway kabinindeki sıfırlama tuşu ile arızayı sıfırlayın",
+"Alleyway'i tekrar otomatik moda alın"
+],
+fotograf: "",
+cozumler: []
+},
+
+"AW1 F086": {
+uzunAdi: "Arıza kıskaç konumu sol veya sağ, B5141 veya B5142 - AW1",
+neden: "Sensörlerden biri çalışmaz",
+mudahale: [
+"Alleyway'i manuel moda değiştirin",
+"Ana şalteri açın",
+"Manuel moda (vanalar) girin",
+"Mobil paneldeki manuel modu başlatın",
+"Kıskacı açın ve çatalı orta konuma sürün",
+"Manuel modda sürüş yalnızca mobil panelin arka tarafındaki 3 konumlu tuşla yapılır",
+"Daha sonra Alleyway'i sıfırlayın",
+"Paneldeki veya Alleyway kabinindeki sıfırlama tuşuyla arızayı sıfırlayın",
+"Alleyway'i otomatik modda tekrar çalıştırın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F087": {
+uzunAdi: "Uyarı her iki mobil panel de aynı resim alanında",
+neden: "Her iki mobil panel de aynı resim alanında. Bu yüzden panel manuel modlar için kullanılamaz",
+mudahale: [
+"AW1'de olmayan mobil paneldeki resmi değiştirin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F088": {
+uzunAdi: "Alleyway besleyiciden hiçbir talep almaz",
+neden: "Alleyway'in devirme komutu vardır ve besleyiciden gelen talebi bekler",
+mudahale: [
+"ZS1 bir talep göndermelidir",
+"Aksı takdirde WMS bir süre sonra taşıma sırasını siler ve Seleyi geri getirir"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F089": {
+uzunAdi: "Arıza AW1'de G2 içinde akü modülü",
+neden: "PLC akü modunda çalışır",
+mudahale: [
+"PLC'nin gücü kaybolur ve Alleyway PLC sadece akü ile çalışır",
+"Gücün neden kaybolduğunu kontrol edin",
+"Ana şalteri, onarım anahtarını, makara konveyör kabinindeki ana şalteri ve 24V güç adaptörünü kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F090": {
+uzunAdi: "Arıza veya uyarı batarya modülü C2 bataryası AW1",
+neden: "Pil modülünde bir arıza var",
+mudahale: [
+"Modülün voltajını ölçün",
+"Voltaj yoksa modülü değiştirin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F091": {
+uzunAdi: "Arıza veya uyarı batarya modülü 75°C üzerinde C2 sıcaklığı AW1",
+neden: "Pil modülü çok sıcak",
+mudahale: [
+"Pil modülünü kontrol edin",
+"Arızalıysa değiştirin"
+],
+fotograf: "",
+cozumler: []
+},
+
+"AW1 F092": {
+uzunAdi: "Arıza motor devre kesici Q32 Fanı devreye giren Y-Aksı",
+neden: "Kısa devre veya aşırı güç yükü",
+mudahale: [
+"Nedeni bulun",
+"Kabloları kontrol edin",
+"Mevcut ortamdaki tüm modülleri ve bileşenleri aşırı güç yüklemesi için kontrol edin",
+"Sorunu giderin",
+"Paneldeki veya Alleyway kabinindeki sıfırlama tuşu ile arızayı sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F093": {
+uzunAdi: "Arıza KINEMATİK programı otomatik kurulumda yerine getirilmiyor",
+neden: "Otomatik mod bir arızayla durur, çünkü KINEMATİK programı (aksı çalıştırma) iptal edildi",
+mudahale: [
+"Alleyway'i manuel moda değiştirin",
+"Ana şalteri açın",
+"Manuel moda girin",
+"Mobil panelde manuel modu başlatın",
+"Çatalı orta konuma sürün",
+"Manuel modda sürüş yalnızca mobil panelin arka tarafındaki 3 konumlu tuşla yapılır",
+"Alleyway'i sıfırlayın",
+"Paneldeki veya Alleyway kabinindeki sıfırlama tuşuyla arızayı sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F094": {
+uzunAdi: "Arıza otomatik adımda arıza, ortada değil",
+neden: "Otomatik modun hareketleri bir arızayla durur ve çatallar ortada değildir",
+mudahale: [
+"Alleyway'i manuel moda değiştirin",
+"Ana şalteri açın",
+"Manuel moda girin (vanalar)",
+"Mobil panelde manuel modu başlatın",
+"Çatalı orta konuma sürün",
+"Manuel modda sürüş yalnızca mobil panelin arka tarafındaki 3 konumlu tuşla yapılır",
+"Alleyway'i sıfırlayın",
+"Paneldeki veya Alleyway kabinindeki sıfırlama tuşuyla arızayı sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F095": {
+uzunAdi: "Arıza A-Aksı (Ana ve Bağlı birim aksi senkron değil, fark çok yüksek)",
+neden: "Ana ve Bağlı birim aksının konumu senkron değil",
+mudahale: [
+"Manuel moda gidin",
+"3 konumlu anahtarı değiştirin",
+"Aksı otomatik olarak aynı konuma hareket ettirin",
+"Daha sonra çatalı orta konumda manuel olarak çalıştırın"
+],
+fotograf: "",
+cozumler: []
+},
+
+"AW1 F096": {
+uzunAdi: "Arıza Z-Aksı (Ana ve Bağlı birim aksi senkron değil, fark çok yüksek)",
+neden: "Ana ve Bağlı birim aksının konumu senkron değil",
+mudahale: [
+"Manuel moda gidin",
+"3 konumlu anahtarı değiştirin",
+"Aksı otomatik olarak aynı konumda hareket ettirin",
+"Daha sonra çatalı orta konumda manuel olarak çalıştırın"
+],
+fotograf: "",
+cozumler: []
+},
+
+"AW1 F097": {
+uzunAdi: "Arıza iletişim A51Y",
+neden: "Festo vana kümesi ile iletişim arızalı",
+mudahale: [
+"Valf kümesini ve kabloyu kontrol edin",
+"Ayrıca vana kümesinin güç kaynağını kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F098": {
+uzunAdi: "Arıza iletişim A52Y",
+neden: "Festo vana kümesi ile iletişim arızalı",
+mudahale: [
+"Valf kümesini ve kabloyu kontrol edin",
+"Ayrıca vana kümesinin güç kaynağını kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F099": {
+uzunAdi: "RFID arızası (İletişim zaman aşımı)",
+neden: "RFID okuyucu ve PLC arasındaki iletişim arızalı",
+mudahale: [
+"RFID okuyucuyu ve kabloyu kontrol edin",
+"RFID'nin güç kaynağını kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F100": {
+uzunAdi: "RFID arızası (Genel arıza)",
+neden: "RFID okuyucunun genel bir arızası vardır",
+mudahale: [
+"Mobil paneldeki arıza numarasını kontrol edin",
+"Bu sayı ile SICK belgelerine göz atın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F101": {
+uzunAdi: "Arıza iletişim I/O A5003",
+neden: "Allen Bradley I/O modülü ile iletişim arızalı",
+mudahale: [
+"I/O modülünü ve kabloyu kontrol edin",
+"Ayrıca dönüştürücünün güç kaynağını kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F102": {
+uzunAdi: "Ayrılmış",
+neden: "Rezerve alarm",
+mudahale: [
+"Kullanılmayan alarm kodu"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F103": {
+uzunAdi: "Ayrılmış",
+neden: "Rezerve alarm",
+mudahale: [
+"Kullanılmayan alarm kodu"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F104": {
+uzunAdi: "Ayrılmış",
+neden: "Rezerve alarm",
+mudahale: [
+"Kullanılmayan alarm kodu"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F105": {
+uzunAdi: "Arıza KINEMATİK boşaltmada",
+neden: "Boşaltmada bağlı birim A için sinyal başladı, artık aktif değil",
+mudahale: [
+"Manuel moda gidin",
+"3 konumlu anahtarı değiştirin",
+"Aksı otomatik olarak aynı konuma hareket ettirin",
+"Daha sonra çatalı ortada manuel modda çalıştırın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F106": {
+uzunAdi: "Arıza Z Motor",
+neden: "Bir motor (ana veya bağlı) çalışmıyor",
+mudahale: [
+"Manuel moda gidin",
+"3 konumlu anahtarı çalıştırın",
+"Aks otomatik olarak aynı konumda hareket eder",
+"Sonra çatalı ortada manuel modda çalıştırın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F107": {
+uzunAdi: "Arıza Motor A",
+neden: "Bir motor (ana veya bağlı) çalışmıyor",
+mudahale: [
+"Manuel moda gidin",
+"3 konumlu anahtarı çalıştırın",
+"Aks otomatik olarak aynı konumda hareket eder",
+"Sonra çatalı ortada manuel modda çalıştırın"
+],
+fotograf: "",
+cozumler: []
+},
+
+"AW1 F108": {
+uzunAdi: "Arıza fanı Y-aksı K32 tekrar kontrol edin",
+neden: "Kontaktörler için bir koşul yanlıştır",
+mudahale: [
+"Kontaktörün başlama komutu vardır ancak geri bildirim çalışmıyor",
+"Geri bildirim sinyali çalıştırılır ancak kontaktörde herhangi bir komut yoktur"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F109": {
+uzunAdi: "Arıza kompresörü K8 tekrar kontrol edin",
+neden: "Kontaktörler için bir koşul yanlıştır",
+mudahale: [
+"Kontaktörün başlama komutu vardır ancak geri bildirim çalışmıyor",
+"Geri bildirim sinyali çalıştırılır ancak kontaktörde herhangi bir komut yoktur"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F110": {
+uzunAdi: "Ayrılmış",
+neden: "Rezerve alarm",
+mudahale: [
+"Kullanılmayan alarm kodu"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F111": {
+uzunAdi: "Ayrılmış",
+neden: "Rezerve alarm",
+mudahale: [
+"Kullanılmayan alarm kodu"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F112": {
+uzunAdi: "Ayrılmış",
+neden: "Rezerve alarm",
+mudahale: [
+"Kullanılmayan alarm kodu"
 ],
 fotograf: "",
 cozumler: []
