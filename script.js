@@ -5,28 +5,8 @@ let alarmKayitlari = [];
 const YONETICI_SIFRESI = "Aga123";
  
 const varsayilanAlarmlar = {
- 
-"STC1 F041": {
- 
-uzunAdi:
-"Fault gap control right side, check position of the bin - M41B7",
- 
-neden:
-"Fork bini üzerine aldıktan sonra güvenli bölgede değil. Gap sensörleri görüyor.",
- 
-mudahale: [
-"Sağ sensörü kontrol et",
-"Sol sensörü kontrol et",
-"Reflektörleri temizle",
-"Fork'u middle pozisyonuna getir",
-"Jog modunda hizala",
-"Robotu otomatiğe al",
-"Start ver ve kontrol et"
-],
- 
-fotograf: "",
-cozumler: []
-},
+
+
 "STC1 F001": {
 uzunAdi: "Güç kaynağı 400V/24VDC arızası - G1",
 neden: "Kısa devre veya aşırı güç yükü",
@@ -39,7 +19,7 @@ mudahale: [
 fotograf: "",
 cozumler: []
 },
- 
+
 "STC1 F002": {
 uzunAdi: "Akü modülü arızası - G2",
 neden: "PLC akü modunda çalışıyor",
@@ -52,7 +32,7 @@ mudahale: [
 fotograf: "",
 cozumler: []
 },
- 
+
 "STC1 F003": {
 uzunAdi: "Elektronik sigorta 24VDC F2 devrede",
 neden: "Kısa devre veya aşırı yük",
@@ -219,7 +199,484 @@ mudahale: [
 fotograf: "",
 cozumler: []
 },
+
+"STC1 F016": {
+uzunAdi: "Devreye giren STC1'de Q31 motor devre kesici frenleri",
+neden: "Kısa devre veya aşırı güç yükü",
+mudahale: [
+"Nedeni bulun",
+"Kabloları kontrol et",
+"Ortamdaki modülleri ve bileşenleri aşırı yük açısından kontrol et",
+"Kontrol edip düzelt",
+"Panel üzerindeki sıfırlama tuşundan arızayı sıfırla"
+],
+fotograf: "",
+cozumler: []
+},
  
+"STC1 F017": {
+uzunAdi: "Dışarıdan acil durdurma (K2/K3) - STC1",
+neden: "Acil durdurma için iletken ray voltaj altında değil",
+mudahale: [
+"İstifleme aracı alanının dışındaysanız istifleme aracını manuel moda getirin",
+"İstifleme aracının dışındaki acil durdurmaları kontrol edin",
+"Makaralı konveyör kabinindeki sinyalleri kontrol edin",
+"Ana kabinden 230V kaybı olup olmadığını kontrol edin",
+"L5-2 bölgesini kontrol edin",
+"Koridordaki powerrail üzerinde sıra hatası olup olmadığını kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F018": {
+uzunAdi: "Acil durdurma - S6 dolap kapağı STC1",
+neden: "Dolap kapağındaki acil durdurma itilmiş",
+mudahale: [
+"Acil durdurmayı çıkarın",
+"İstifleme aracını sıfırlayın",
+"Panel üzerindeki sıfırlama tuşunu kullanın",
+"İstifleme aracı kabinindeki sıfırlama tuşunu kullanın"
+],
+fotograf: "",
+cozumler: []
+},
+
+"STC1 F019": {
+uzunAdi: "Acil durdurma mobil panel - STC1",
+neden: "Mobil paneldeki acil durdurma itilmiş",
+mudahale: [
+"Acil durdurmayı çıkar",
+"İstifleme aracını sıfırla",
+"Panel veya istifleme aracı kabinindeki sıfırlama tuşunu kullan",
+"Panel fişe takılı değilse manuel modda çalışmak için mobil paneli bağla"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F020": {
+uzunAdi: "Movisafe'ten STO G21A1, izleme hızı X ekseni - STC1",
+neden: "Frekans dönüştürücüsünden gelen güvenlik sinyalleri tam değil veya PLC bağlantısı kaybolmuş",
+mudahale: [
+"Hız emniyet şalterinin doğru şekilde çalıştığını kontrol et",
+"PLC bağlantılarını kontrol et",
+"İstifleme aracını sıfırla",
+"Panel veya kabindeki sıfırlama tuşunu kullan"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F021": {
+uzunAdi: "Kontrol hız sınırı manyetik anahtar hızı %70 M21B3",
+neden: "İstifleme aracı hızlandırmak için ön ve arka alanda çalıştırılıyor",
+mudahale: [
+"%70 hız emniyet şalterinin çalıştığını kontrol et",
+"Hız emniyet devresini kontrol et",
+"Panel veya kabindeki sıfırlama tuşuyla arızayı sıfırla"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F022": {
+uzunAdi: "Kontrol hız sınırı manyetik anahtar hızı %50 M21B3",
+neden: "İstifleme aracı hızlandırmak için ön ve arka alanda çalıştırılıyor",
+mudahale: [
+"%50 hız emniyet şalterinin çalıştığını kontrol et",
+"Hız emniyet devresini kontrol et",
+"Panel veya kabindeki sıfırlama tuşuyla arızayı sıfırla"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F023": {
+uzunAdi: "Kontrol hız sınırı manyetik anahtar hızı %30 M21B3",
+neden: "İstifleme aracı hızlandırmak için ön ve arka alanda çalıştırılıyor",
+mudahale: [
+"%30 hız emniyet şalterinin çalıştığını kontrol et",
+"Hız emniyet devresini kontrol et",
+"Panel veya kabindeki sıfırlama tuşuyla arızayı sıfırla"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F024": {
+uzunAdi: "Sıralı otomatik harekette arıza - STC1",
+neden: "İstifleme aracının bazı otomatik adımlarında arıza var",
+mudahale: [
+"Probleme neden olan diğer arıza sayılarını kontrol et",
+"Önce ilgili aktif arızaları gider",
+"Daha sonra sistemi sıfırla"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F025": {
+uzunAdi: "Arıza konum izleme teleskopik tahrik M41B1",
+neden: "Çatal ortada değil ve X ekseni çalışıyor olacak",
+mudahale: [
+"Konumlandırma çatalı için sensörlerin orta konumda olduğunu kontrol et",
+"İstifleme aracını sıfırla",
+"Panel veya istifleme aracı kabinindeki sıfırlama tuşunu kullan"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F026": {
+uzunAdi: "Arıza konum izleme teleskopik tahrik M41B2",
+neden: "Çatal ortada değil ve X ekseni çalışıyor olacak",
+mudahale: [
+"Konumlandırma çatalı için sensörlerin orta konumda olduğunu kontrol et",
+"İstifleme aracını sıfırla",
+"Panel veya istifleme aracı kabinindeki sıfırlama tuşunu kullan"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F027": {
+uzunAdi: "Arıza emniyet giriş modülü (Emniyet Noktası 1734-IB8S)",
+neden: "Emniyet giriş modülünde bir arıza var",
+mudahale: [
+"PLC'nin giriş modüllerini kontrol et",
+"Emniyet şeması STC1 Sayfa 189 ve sonraki sayfaları incele",
+"Arızalı modülü tespit et"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F028": {
+uzunAdi: "Arızası emniyet çıkış modülü (Emniyet Noktası 1734-OB8S)",
+neden: "Emniyet çıkış modülünde bir arıza var",
+mudahale: [
+"PLC'nin çıkış modüllerini kontrol et",
+"Emniyet şeması STC1 Sayfa 189 ve sonraki sayfaları incele",
+"Arızalı modülü tespit et"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F029": {
+uzunAdi: "Arıza teleskopik hareket senkronize değil",
+neden: "Çatallar senkronize değil, bir taraf tam ortada değil",
+mudahale: [
+"Konumlandırma çatalı için sensörlerin orta konumda olduğunu kontrol et",
+"Çatalların mekanik durumunu kontrol et",
+"İstifleme aracını sıfırla",
+"Panel veya kabindeki sıfırlama tuşunu kullan"
+],
+fotograf: "",
+cozumler: []
+},
+
+"STC1 F030": {
+uzunAdi: "Arıza teleskopik M41B1 anahtarlı değil",
+neden: "Çatal yanlış pozisyonda",
+mudahale: [
+"Çatalın konumunu kontrol et",
+"Çatal ortada olmasına rağmen sensör çalışmıyorsa sensörü kontrol et",
+"Konumlandırma çatalı için sensörlerin orta konumda olduğunu doğrula",
+"İstifleme aracını sıfırla",
+"Panel veya istifleme aracı kabinindeki sıfırlama tuşunu kullan"
+],
+fotograf: "",
+cozumler: []
+},
+
+JavaScript
+"STC1 F031": {
+uzunAdi: "Arızası teleskopik M41B2 anahtarlı değil",
+neden: "Çatal yanlış pozisyonda",
+mudahale: [
+"Çatalın konumunu kontrol et",
+"Konumlandırma çatalı sensörlerinin orta konumda olduğunu kontrol et",
+"İstifleme aracını sıfırla",
+"Panel veya kabindeki sıfırlama tuşunu kullan"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F032": {
+uzunAdi: "Ayrılmış",
+neden: "Rezerve edilmiş alarm",
+mudahale: [
+"Kullanılmayan alarm kodu"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F033": {
+uzunAdi: "Arıza G21 Movidrive dönüştürücü - X ekseni",
+neden: "Frekans dönüştürücü arızası",
+mudahale: [
+"İstifleme aracını manuel modda çalıştır",
+"Anahtarı aç",
+"Kurulum moduna gir",
+"Referans moduna gir",
+"Paneldeki REF modunu aç",
+"İstifleme aracını işaretli konuma getir",
+"Referans X eksenine bas"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F034": {
+uzunAdi: "Arıza G31 Movidrive dönüştürücü - Y ekseni",
+neden: "Frekans dönüştürücü arızası",
+mudahale: [
+"İstifleme aracını manuel modda çalıştır",
+"Kurulum moduna gir",
+"Referans moduna gir",
+"REF modunu aç",
+"İstifleme aracını işaretli konuma getir",
+"Referans Y eksenine bas"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F035": {
+uzunAdi: "Arıza G41 Movidrive dönüştürücü - Z1 ekseni",
+neden: "Frekans dönüştürücü arızası",
+mudahale: [
+"İstifleme aracını manuel modda çalıştır",
+"Kurulum moduna gir",
+"Referans moduna gir",
+"REF modunu aç",
+"İstifleme aracını işaretli konuma getir",
+"Referans Z1 eksenine bas"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F036": {
+uzunAdi: "Arıza G51 Movidrive dönüştürücü - Z2 ekseni",
+neden: "Frekans dönüştürücü arızası",
+mudahale: [
+"İstifleme aracını manuel modda çalıştır",
+"Kurulum moduna gir",
+"Referans moduna gir",
+"REF modunu aç",
+"İstifleme aracını işaretli konuma getir",
+"Referans Z2 eksenine bas'ref modunu'açın ve 
+istifleme aracını işaretli konuma getirin belirtilen z2 aksına' basın "
+],
+fotograf: "",
+cozumler: []
+},
+
+"STC1 F037": {
+uzunAdi: "Arıza G21 Movidrive dönüştürücüsü arızası",
+neden: "Frekans dönüştürücü bağlantıyı kaybetti veya bir arızası var",
+mudahale: [
+"Dönüştürücünün hata numarasını kontrol et",
+"Mobil panel veya dönüştürücü panelindeki hata kodunu oku",
+"SEW kılavuzundaki ilgili hata numarasına bak",
+"Arızayı gider ve sistemi sıfırla"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F038": {
+uzunAdi: "Arıza G31 Movidrive dönüştürücüsü arızası",
+neden: "Frekans dönüştürücü bağlantıyı kaybetti veya bir arızası var",
+mudahale: [
+"Dönüştürücünün hata numarasını kontrol et",
+"Mobil panel veya dönüştürücü panelindeki hata kodunu oku",
+"SEW kılavuzundaki ilgili hata numarasına bak",
+"Arızayı gider ve sistemi sıfırla"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F039": {
+uzunAdi: "Arıza G41 Movidrive dönüştürücüsü arızası",
+neden: "Frekans dönüştürücü bağlantıyı kaybetti veya bir arızası var",
+mudahale: [
+"Dönüştürücünün hata numarasını kontrol et",
+"Mobil panel veya dönüştürücü panelindeki hata kodunu oku",
+"SEW kılavuzundaki ilgili hata numarasına bak",
+"Arızayı gider ve sistemi sıfırla"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F040": {
+uzunAdi: "Arıza G51 Movidrive dönüştürücüsü arızası",
+neden: "Frekans dönüştürücü bağlantıyı kaybetti veya bir arızası var",
+mudahale: [
+"Dönüştürücünün hata numarasını kontrol et",
+"Mobil panel veya dönüştürücü panelindeki hata kodunu oku",
+"SEW kılavuzundaki ilgili hata numarasına bak",
+"Arızayı gider ve sistemi sıfırla"
+],
+fotograf: "",
+cozumler: []
+},
+
+"STC1 F041": {
+ 
+uzunAdi:
+"Fault gap control right side, check position of the bin - M41B7",
+ 
+neden:
+"Fork bini üzerine aldıktan sonra sağ sensör güvenli bölgede değil. Gap sensörleri görüyor.",
+ 
+mudahale: [
+"Sağ sensörü kontrol et",
+"Sol sensörü kontrol et",
+"Reflektörleri temizle",
+"Fork'u middle pozisyonuna getir",
+"Jog modunda hizala",
+"Robotu otomatiğe al",
+"Start ver ve kontrol et"
+],
+ 
+fotograf: "",
+cozumler: []
+},
+
+"STC1 F042": {
+ 
+uzunAdi:
+"Fault gap control left side, check position of the bin - M41B6",
+ 
+neden:
+"Fork bini üzerine aldıktan sonra sol sensör güvenli bölgede değil. Gap sensörleri görüyor.",
+ 
+mudahale: [
+"Sağ sensörü kontrol et",
+"Sol sensörü kontrol et",
+"Reflektörleri temizle",
+"Fork'u middle pozisyonuna getir",
+"Jog modunda hizala",
+"Robotu otomatiğe al",
+"Start ver ve kontrol et"
+],
+ 
+fotograf: "",
+cozumler: []
+},
+
+"STC1 F043": {
+uzunAdi: "Arıza yer boş koordinatları kontrol et, M41B8 sol taraf, M41B9 sağ taraf",
+neden: "İstifleme aracı toplama komutu alır ancak alan boştur",
+mudahale: [
+"WMS alanı kilitler ve otomatik olarak yeni bir komut gönderir",
+"Yeni komut geldikten sonra arızanın otomatik olarak giderildiğini kontrol et"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F044": {
+uzunAdi: "Arıza yer derinlemesine boş koordinatları kontrol et, M41B8 sol taraf, M41B9 sağ taraf",
+neden: "İstifleme aracı toplama komutu alır ancak alan boştur",
+mudahale: [
+"WMS alanı kilitler ve otomatik olarak yeni bir komut gönderir",
+"Yeni komut geldikten sonra arızanın otomatik olarak giderildiğini kontrol et"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F045": {
+uzunAdi: "Arıza yer dolu koordinatları kontrol edin, M41B8 sol taraf, M41B9 sağ taraf",
+neden: "İstifleme aracı bırakma komutu alır ancak alan boştur",
+mudahale: [
+"WMS alanı kilitler ve otomatik olarak yeni bir komut gönderir",
+"Yeni komut geldikten sonra arızanın otomatik olarak giderildiğini kontrol et"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F046": {
+uzunAdi: "Arıza yer derinlemesine dolu koordinatları kontrol edin, M41B8 sol taraf, M41B9 sağ taraf",
+neden: "İstifleme aracı bırakma komutu alır ancak alan doludur",
+mudahale: [
+"WMS alanı kilitler ve otomatik olarak yeni bir komut gönderir",
+"Yeni komut geldikten sonra arızanın otomatik olarak giderildiğini kontrol et"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F047": {
+uzunAdi: "Arıza çatal, toplama komutu için doludur, boş olmalı",
+neden: "İstifleme aracı toplama komutu alır ancak istifleme aracı doludur",
+mudahale: [
+"Çatal üzerindeki M41B3 kutusunu kontrol et",
+"WMS yeni bir komut gönderene kadar sistemi gözlemle",
+"Yeni komuttan sonra arızanın otomatik olarak giderildiğini kontrol et"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F048": {
+uzunAdi: "Arıza çatal, bırakma komutu için boştur, dolu olmalı",
+neden: "İstifleme aracı bırakma komutu alır ancak istifleme aracı dolu değildir",
+mudahale: [
+"Çatal üzerindeki M41B3 kutusunu kontrol et",
+"WMS yeni bir komut gönderene kadar sistemi gözlemle",
+"Yeni komuttan sonra arızanın otomatik olarak giderildiğini kontrol et"
+],
+fotograf: "",
+cozumler: []
+},
+
+"STC1 F049": {
+uzunAdi: "Arızası otomatik veya yarı otomatik sıralama, zaman aşımı",
+neden: "İstifleme aracı otomatik sıralama için çok uzun süreye ihtiyaç duyar",
+mudahale: [
+"Diğer aktif arıza numaralarını kontrol et",
+"İstifleme aracının durumunu kontrol et",
+"Aktif arızaları gider",
+"Sistemi sıfırla"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F050": {
+uzunAdi: "Arıza PLC konveyör tekniğine bağlanma",
+neden: "WMS ile bağlantı kaybolur",
+mudahale: [
+"PLC'yi kontrol et",
+"Veri sensörlerini kontrol et",
+"Ethernet kablosunu kontrol et",
+"İletişim sürecini incele",
+"WMS bağlantısını kontrol et"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC1 F051": {
+uzunAdi: "Arıza ES için bağlantı PLC konveyör tekniği veriler",
+neden: "Makaralı konveyörden ana PLC'ye bağlantı kaybolur",
+mudahale: [
+"PLC'yi kontrol et",
+"Veri sensörlerini kontrol et",
+"Ethernet kablosunu kontrol et",
+"İletiş
+
 "AW1 F078": {
  
 uzunAdi: "No Motion Detected",
