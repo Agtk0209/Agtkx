@@ -2900,7 +2900,461 @@ fotograf: "",
 cozumler: []
 },
 
+"AW1 F049": {
+uzunAdi: "A bağlı birimi G52 arızaları tekrar kontrol edin",
+neden: "Kontaktörlerin geçiş komutu vardır, ancak kontaktörler çalışmaz",
+mudahale: [
+"Çapraz mekiğin kontaktörlerini kontrol edin",
+"24V gerilimin tam olduğunu doğrulayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F050": {
+uzunAdi: "Arıza fren X-aksı G21 tekrar kontrol edin",
+neden: "Kontaktörlerin geçiş komutu vardır, ancak kontaktörler çalışmaz",
+mudahale: [
+"Çapraz mekiğin kontaktörlerini kontrol edin",
+"24V gerilimin tam olduğunu doğrulayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F051": {
+uzunAdi: "Arıza fren Y-aksı G31 tekrar kontrol edin",
+neden: "Kontaktörlerin geçiş komutu vardır, ancak kontaktörler çalışmaz",
+mudahale: [
+"Çapraz mekiğin kontaktörlerini kontrol edin",
+"24V gerilimin tam olduğunu doğrulayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F052": {
+uzunAdi: "Arıza Moviaxis inverter tahrik aksı G21",
+neden: "Dönüştürücü bağlantıyı kaybetti veya bir arızası var",
+mudahale: [
+"Dönüştürücünün arıza numarasını kontrol edin",
+"Mobil panel veya dönüştürücü panelindeki hata kodunu inceleyin",
+"SEW kılavuzundan ilgili arıza kodunu kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F053": {
+uzunAdi: "Arıza film aksı inverter kaldırma aksı G31",
+neden: "Dönüştürücü bağlantıyı kaybetti veya bir arızası var",
+mudahale: [
+"Dönüştürücünün arıza numarasını kontrol edin",
+"Mobil panel veya dönüştürücü panelindeki hata kodunu inceleyin",
+"SEW kılavuzundan ilgili arıza kodunu kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F054": {
+uzunAdi: "Arıza Moviaxis inverter teleskop eksen ana G41",
+neden: "Dönüştürücü bağlantıyı kaybetti veya bir arızası var",
+mudahale: [
+"Dönüştürücünün arıza numarasını kontrol edin",
+"Mobil panel veya dönüştürücü panelindeki hata kodunu inceleyin",
+"SEW kılavuzundan ilgili arıza kodunu kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F055": {
+uzunAdi: "Arıza Moviaxis inverter eğim aksı ana G51",
+neden: "Dönüştürücü bağlantıyı kaybetti veya bir arızası var",
+mudahale: [
+"Dönüştürücünün arıza numarasını kontrol edin",
+"Mobil panel veya dönüştürücü panelindeki hata kodunu inceleyin",
+"SEW kılavuzundan ilgili arıza kodunu kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F056": {
+uzunAdi: "Arıza Moviaxis inverter teleskop aksı bağlı birimi G42",
+neden: "Dönüştürücü bağlantıyı kaybetti veya bir arızası var",
+mudahale: [
+"Dönüştürücünün arıza numarasını kontrol edin",
+"Mobil panel veya dönüştürücü panelindeki hata kodunu inceleyin",
+"SEW kılavuzundan ilgili arıza kodunu kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F057": {
+uzunAdi: "Arıza Moviaxis inverter eğim aksı bağlı birim G52",
+neden: "Dönüştürücü bağlantıyı kaybetti veya bir arızası var",
+mudahale: [
+"Dönüştürücünün arıza numarasını kontrol edin",
+"Mobil panel veya dönüştürücü panelindeki hata kodunu inceleyin",
+"SEW kılavuzundan ilgili arıza kodunu kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+
+"AW1 F058": {
+uzunAdi: "AOI arızası Moviaxis G10",
+neden: "Dönüştürücü bağlantıyı kaybetti veya bir arızası var",
+mudahale: [
+"Dönüştürücünün arıza numarasını kontrol edin",
+"Mobil panel veya dönüştürücü panelindeki hata kodunu inceleyin",
+"SEW kılavuzundan ilgili arıza kodunu kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F059": {
+uzunAdi: "Arıza Moviaxis sistemi aksı G10",
+neden: "Dönüştürücü bağlantıyı kaybetti veya bir arızası var",
+mudahale: [
+"Dönüştürücünün arıza numarasını kontrol edin",
+"Mobil panel veya dönüştürücü panelindeki hata kodunu inceleyin",
+"SEW kılavuzundan ilgili arıza kodunu kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F060": {
+uzunAdi: "Arıza Moviaxis sistemi uygulaması G10",
+neden: "Dönüştürücü bağlantıyı kaybetti veya bir arızası var",
+mudahale: [
+"Dönüştürücünün arıza numarasını kontrol edin",
+"Mobil panel veya dönüştürücü panelindeki hata kodunu inceleyin",
+"SEW kılavuzundan ilgili arıza kodunu kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F061": {
+uzunAdi: "Arıza boşluk koruma sol M41B3",
+neden: "Boşluk kontrolü için sensör meşguldür ve çapraz mekik X yönünde hareket eder",
+mudahale: [
+"Boşluk kontrolü için sensörleri kontrol edin",
+"Sensör meşgul değilse arızayı sıfırlayın",
+"Sensör meşgulse Alleyway'i manuel moda alın",
+"Mobil paneli Alleyway içine koyun",
+"Manuel moda girin ve seleyi boş bir yere götürün",
+"Manuel modda selenin seçilmesi gerekir",
+"Arızayı sıfırlayın",
+"Çapraz mekiği tekrar otomatik modda çalıştırın"
+],
+fotograf: "",
+cozumler: []
+},
+
+"AW1 F062": {
+uzunAdi: "Arıza boşluk koruma sağ M41B4",
+neden: "Boşluk kontrolü için sensör meşguldür ve çapraz mekik X yönünde hareket eder",
+mudahale: [
+"Boşluk kontrolü için sensörleri kontrol edin",
+"Sensör meşgul değilse arızayı sıfırlayın",
+"Sensör meşgulse Alleyway'i manuel moda alın",
+"Mobil paneli Alleyway içine koyun",
+"Alleyway'de manuel moda girin ve seleyi boş bir yere götürün",
+"Bundan sonra manuel modda selenin seçilmesi gerekir",
+"Arızayı sıfırlayın",
+"Çapraz mekiği tekrar otomatik modda çalıştırın"
+],
+fotograf: "",
+cozumler: []
+},
+
+"AW1 F063": {
+uzunAdi: "Arıza M41B2 bırakma komutu için dolu alan",
+neden: "Alleyway bir bırakma komutu aldı, ancak Alleyway dolu",
+mudahale: [
+"WMS alanı kilitler ve otomatik olarak yeni bir komut gönderir"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F064": {
+uzunAdi: "Arıza toplama M41B2 için boş alan",
+neden: "Alleyway bir seçim komutu alır, ama alan boştur",
+mudahale: [
+"WMS alanı kilitler ve otomatik olarak yeni bir komut gönderir"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F065": {
+uzunAdi: "Arıza başlangıç taşıma aksı M21B1'de emniyet şalteri - AW1",
+neden: "Devreye giren emniyet şalteri X-aksı (Alleyway yanlış pozisyonda gider)",
+mudahale: [
+"Alleyway'i manuel moda çalıştırın",
+"Ana şalteri açın",
+"Yan bağlantı için şalteri etkinleştirin",
+"Manuel mod X-aksına gidin",
+"Paneldeki manuel modu açın",
+"İstifleme aracını emniyet şalterinden uzaklaştırın",
+"Manuel modda çalışma sadece mobil panelin arka tarafındaki 3 konumlu tuşla yapılır"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F066": {
+uzunAdi: "Arıza bitiş taşıma aksı M21B1'de emniyet şalteri - AW1",
+neden: "Devreye giren emniyet şalteri X-aksı (Alleyway yanlış pozisyonda gider)",
+mudahale: [
+"Alleyway'i manuel moda çalıştırın",
+"Ana şalteri açın",
+"Yan bağlantı için şalteri etkinleştirin",
+"Manuel mod X-aksına gidin",
+"Paneldeki manuel modu açın",
+"İstifleme aracını emniyet şalterinden uzaklaştırın",
+"Manuel modda çalışma sadece mobil panelin arka tarafındaki 3 konumlu tuşla yapılır"
+],
+fotograf: "",
+cozumler: []
+},
+
+"AW1 F067": {
+uzunAdi: "Arıza emniyet şalteri kaldırma aksı M31B2 - AW1",
+neden: "Devreye giren emniyet şalteri Y-aksı (Alleyway tahrikleri yanlış pozisyonda)",
+mudahale: [
+"Alleyway'i manuel moda çalıştırın",
+"Ana şalteri açın",
+"Yan bağlantı için şalteri etkinleştirin",
+"Manuel mod Y-aksına gidin",
+"Paneldeki manuel modu açın",
+"İstifleme aracını emniyet şalterinden uzaklaştırın",
+"Manuel modda çalışma sadece mobil panelin arka tarafındaki 3 konumlu tuşla yapılır"
+],
+fotograf: "",
+cozumler: []
+},
+
+"AW1 F068": {
+uzunAdi: "Arıza emniyet şalteri aşağı kaldırma aksı M31B3 - AW1",
+neden: "Devreye giren emniyet şalteri Y-aksı (Alleyway tahrikleri yanlış pozisyonda)",
+mudahale: [
+"Alleyway'i manuel moda çalıştırın",
+"Ana şalteri açın",
+"Yan bağlantı için şalteri etkinleştirin",
+"Manuel mod Y-aksına gidin",
+"Paneldeki manuel modu açın",
+"İstifleme aracını emniyet şalterinden uzaklaştırın",
+"Manuel modda çalışma sadece mobil panelin arka tarafındaki 3 konumlu tuşla yapılır"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F069": {
+uzunAdi: "Arıza emniyet şalteri hız limiti kaldırma aksı M31B4 - AW1",
+neden: "Hız emniyet şalteri Y-aksı devreye giriyor, kaldırma platformu çok hızlı çalışıyor",
+mudahale: [
+"Kabloyu ve platformu çatallarla kontrol edin",
+"Emniyet mandalını kontrol edin",
+"İstifleme aracı kılavuzuna bakın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F070": {
+uzunAdi: "Arıza emniyet şalteri tel kablo gerginliği M31B5 - AW1",
+neden: "Emniyet şalteri kablo gerginliği devreye girdi",
+mudahale: [
+"Hız sınırlayıcı ve kaldırma platformundan gelen kabloyu kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F071": {
+uzunAdi: "Arıza emniyet şalteri kaldırma aksı M31B1 - AW1",
+neden: "Devreye giren emniyet şalteri Y-aksı (Alleyway tahrikleri yanlış pozisyonda)",
+mudahale: [
+"Alleyway'i manuel moda çalıştırın",
+"Ana şalteri açın",
+"Yan bağlantı için şalteri etkinleştirin",
+"Manuel mod Y-aksına gidin",
+"Paneldeki manuel modu açın",
+"İstifleme aracını emniyet şalterinden uzaklaştırın",
+"Manuel modda çalışma sadece mobil panelin arka tarafındaki 3 konumlu tuşla yapılır"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F072": {
+uzunAdi: "Arıza bir aks belirtilmemiştir - AW1",
+neden: "Bir dönüştürücüden bahsedilmemiştir",
+mudahale: [
+"Alleyway'i manuel moda çalıştırın",
+"Ana anahtarı açın",
+"Kurulum moduna girin",
+"Referans moduna gidin",
+"Paneldeki REF modunu açın",
+"Alleyway'i işaretli konuma getirin",
+"Referans tuşuna basın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F073": {
+uzunAdi: "Arıza toplama, bırakma veya devirme için yanlış komut",
+neden: "WMS'den gelen komut doğru değil (sele olmadan devirme vb.)",
+mudahale: [
+"WMS sistemindeki Alleyway için taşıma sırasını kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+
+"AW1 F074": {
+uzunAdi: "Arıza kıskaç merkezi kapama, vana Y512 açık ancak B5121 veya B5122 sensörleri çalışmıyor",
+neden: "Y512 vanası çalışma sinyaline sahiptir ancak B5121 veya B5122 sensörleri çalışmaz",
+mudahale: [
+"Vanayı ve sensörleri kontrol edin",
+"Kıskaç kolları son konumuna ulaşamadı",
+"Sele ve kıskaç konumunu kontrol edin",
+"Gerektiğinde manuel olarak ayarlayın",
+"Seleyi orta konuma getirin",
+"Arızadan çıkar ve otomatik olarak sonlanır"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F075": {
+uzunAdi: "Arıza kıskaç sıkma kapanışı, vana Y514 açık ancak B514 sensörleri çalışmıyor",
+neden: "Y514 vanası çalışma sinyaline sahiptir ancak B514 sensörleri çalışmaz",
+mudahale: [
+"Vanayı ve sensörleri kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F076": {
+uzunAdi: "Arıza kıskaç merkezi açık, vana Y511 açık ancak B5111 veya B5112 sensörleri çalışmıyor",
+neden: "Y511 vanası çalışma sinyaline sahiptir ancak B5111 veya B5112 sensörleri çalışmaz",
+mudahale: [
+"Vanayı ve sensörleri kontrol edin",
+"Kıskaç orta konumuna gitmedi",
+"Kıskaç konumunu kontrol edin",
+"Gerektiğinde manuel olarak ayarlayın",
+"Seleyi orta konuma getirin",
+"Arızadan çıkar ve otomatik olarak sonlanır"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F077": {
+uzunAdi: "Arıza kıskaç sıkma açık, vana Y513 açık ancak B5131 veya B5132 sensörleri çalışmıyor",
+neden: "Y511 vanası çalışma sinyaline sahiptir ancak B5111 veya B5112 sensörleri çalışmaz",
+mudahale: [
+"Vanayı ve sensörleri kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
 "AW1 F078": {
+uzunAdi: "Arıza kıskaç merkezi sensörler B5111, B5112, B5121 ve B5122",
+neden: "B5111, B5112, B5121 veya B5122 sensörlerinden biri ya da tümü aynı anda çalışmıyor",
+mudahale: [
+"Sensörleri kontrol edin",
+"Kıskaç kolları son konumuna ulaşamadı",
+"Sele ve kıskaç konumunu kontrol edin",
+"Gerektiğinde manuel olarak ayarlayın",
+"Seleyi orta konuma getirin",
+"Arızadan çıkar ve otomatik olarak sonlanır"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F079": {
+uzunAdi: "Arıza kıskaç sıkma sensörleri B5131, B5132 ve B514",
+neden: "B5131, B5132 ve B514 sensörlerinden biri ya da hiçbiri çalışmıyor",
+mudahale: [
+"Sensörleri kontrol edin",
+"Kıskaç kolları son konumuna ulaşamadı"
+],
+fotograf: "",
+cozumler: []
+},
+
+"AW1 F080": {
+uzunAdi: "Arıza kıskaç merkezi, merkez için vana Y1 kapatın",
+neden: "Merkez için vana çalışmıyor",
+mudahale: [
+"Vanayı manuel modda çalıştırın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F081": {
+uzunAdi: "Arıza PLC konveyör tekniğiyle bağlantı",
+neden: "ZS2'deki ana PLC'ye bağlantı kaybolur",
+mudahale: [
+"PLC'yi kontrol edin",
+"Optik veri birleştiriciyi kontrol edin",
+"ODC'ye ve ODC'den PLC aracına Ethernet kablosunu kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F082": {
+uzunAdi: "Arıza ana PLC ZS2'ye gelen ya da oradan giden iletişim, komut verisi - AW1",
+neden: "Lidhandler (tahrik)'dan depoya bağlantı kayıptır",
+mudahale: [
+"PLC'yi kontrol edin",
+"Optik veri birleştiriciyi kontrol edin",
+"ZS2'den ODC'ye ve ODC'den PLC aracına Ethernet kablosunu kontrol edin",
+"WMS'den gelen bağlantıları kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F083": {
+uzunAdi: "Arıza RFID veri okuyucu - AW1",
+neden: "RFID seleyi okuyamıyor",
+mudahale: [
+"WMS sistemi yeni bir taşıma komutu gönderir ve seleyi boş bir yere götürür"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"AW1 F084": {
+uzunAdi: "Arıza bağlantı WMS, komut yok, ana ekran AW'de sıfırlama",
+neden: "Depodan gelen komutta ters giden bir şeyler var",
+mudahale: [
+"Alleyway'den ana ekrandaki yumuşak düğmeyle sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+
+"AW1 F0781": {
  
 uzunAdi: "No Motion Detected",
  
