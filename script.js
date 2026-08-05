@@ -37,7 +37,7 @@ uzunAdi:
 neden:
 "Fork bini üzerine aldıktan sonra güvenli bölgede değil. Gap sensörleri görüyor.",
  
-mudehale: [
+mudahale: [
 "Sağ sensörü kontrol et",
 "Sol sensörü kontrol et",
 "Reflektörleri temizle",
@@ -58,7 +58,7 @@ uzunAdi: "No Motion Detected",
 neden:
 "AW1 tarafında uzun süre istekte olan feeder var.",
  
-mudehale: [
+mudahale: [
 "İstekte olan feederleri WMS 'Feeder Overview' sayfasından kontrol et",
 "İstekte olan feederın buffer alanında tütün olduğundan emin ol.",
 "Feader içini kameralardan kontrol edip en kısa zamanda beslenmesini sağla"
@@ -194,7 +194,8 @@ let html = `
  
 <ul>
 `;
- (alarm.mudahale || []).forEach(adim => {
+ 
+alarm.mudahale.forEach(adim => {
  
 html += `<li>${adim}</li>`;
  
@@ -204,7 +205,7 @@ html += "</ul>";
  
 html += "<h3>📚 Çözüm Geçmişi</h3>";
  
-if (!alarm.cozumler || alarm.cozumler.length === 0) {
+if (alarm.cozumler.length === 0) {
  
 html += "Kayıt yok.";
 }
@@ -339,7 +340,7 @@ link.download =
 link.click();
 }
  
-async function alarmEkle() {
+function alarmEkle() {
  
 const alarmNo =
 document.getElementById("yeniAlarmNo").value.trim();
@@ -383,17 +384,6 @@ fotograf: "",
 cozumler: []
  
 };
- 
-await setDoc(
-doc(db, "Alarmlar", alarmNo),
-{
-uzunAdi: uzunAdi,
-neden: neden,
-mudahale: mudahale,
-fotograf: "",
-cozumler: []
-}
-);
  
 kaydet();
  
