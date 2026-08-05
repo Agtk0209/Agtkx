@@ -7,6 +7,19 @@ getDocs,
 setDoc,
 doc
 } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
+ 
+const firebaseConfig = {
+apiKey: "AIzaSyColf3uuecPo1lZa301yS9YoHNzIkdun4I",
+authDomain: "alarm-asistani.firebaseapp.com",
+projectId: "alarm-asistani",
+storageBucket: "alarm-asistani.firebasestorage.app",
+messagingSenderId: "80032270013",
+appId: "1:80032270013:web:7ef994f8345f3f2e6bd9d4",
+measurementId: "G-CC9554PJDY"
+};
+ 
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
 let aktifAlarm = null;
 let toplamSorgu = 0;
@@ -464,4 +477,11 @@ ${alarmlar[kod].uzunAdi}
  
 document.getElementById("alarmListesi").innerHTML =
 html;
+
 }
+window.alarmAra = alarmAra;
+window.alarmEkle = alarmEkle;
+window.notKaydet = notKaydet;
+window.csvIndir = csvIndir;
+window.tumVerileriSil = tumVerileriSil;
+window.kayitliAlarmlariGoster = kayitliAlarmlariGoster;
