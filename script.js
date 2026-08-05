@@ -52,6 +52,23 @@ JSON.parse(localStorage.getItem("alarmlar"))
 ||
 JSON.parse(JSON.stringify(varsayilanAlarmlar));
  
+async function firebaseAlarmlariYukle() {
+ 
+const snapshot =
+await getDocs(
+collection(db, "Alarmlar")
+);
+ 
+snapshot.forEach((belge) => {
+ 
+alarmlar[belge.id] =
+belge.data();
+ 
+});
+ 
+listeyiYukle();
+ 
+}
 function kaydet() {
  
 localStorage.setItem(
@@ -70,7 +87,7 @@ document.getElementById("saat").innerHTML =
  
 setInterval(tarihSaat, 1000);
 tarihSaat();
- 
+firebaseAlarmlariYukle(); 
 listeyiYukle();
  
 function listeyiYukle() {
