@@ -194,8 +194,7 @@ let html = `
  
 <ul>
 `;
- 
-alarm.mudahale.forEach(adim => {
+ (alarm.mudahale || []).forEach(adim => {
  
 html += `<li>${adim}</li>`;
  
@@ -205,7 +204,7 @@ html += "</ul>";
  
 html += "<h3>📚 Çözüm Geçmişi</h3>";
  
-if (alarm.cozumler.length === 0) {
+if (!alarm.cozumler || alarm.cozumler.length === 0) {
  
 html += "Kayıt yok.";
 }
