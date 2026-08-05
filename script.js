@@ -1160,6 +1160,267 @@ fotograf: "",
 cozumler: []
 },
 
+"STC2 F001": {
+uzunAdi: "Arıza güç kaynağı 400V/24VDC - STC2'de G1",
+neden: "Kısa devre veya aşırı güç yükü",
+mudahale: [
+"Nedeni bulun",
+"Kabloları kontrol edin",
+"Modülleri ve bileşenleri aşırı yük için kontrol edin",
+"Powerrail sistemini kontrol edin",
+"Arızayı sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F002": {
+uzunAdi: "Arıza STC2'de G2 akü modülü",
+neden: "PLC pil modunda çalışır",
+mudahale: [
+"PLC'nin güç kaybını kontrol edin",
+"Ana anahtarı kontrol edin",
+"Repair switch konumunu kontrol edin",
+"24V beslemeyi kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F003": {
+uzunAdi: "Arıza devreye giren STC2'de elektronik sigorta 24VDC F2",
+neden: "Kısa devre veya aşırı güç yükü",
+mudahale: [
+"Nedeni bulun",
+"Kabloları kontrol edin",
+"Modülleri ve bileşenleri aşırı yük açısından kontrol edin",
+"Sorunu giderin",
+"Arızayı sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F004": {
+uzunAdi: "Arıza aşırı yük F21A F21B veya M31R2'de fren rezistörü",
+neden: "Kısa devre veya aşırı güç yükü",
+mudahale: [
+"Kabloları kontrol edin",
+"Modülleri ve bileşenleri aşırı yük açısından kontrol edin",
+"Sorunu giderin",
+"Arızayı sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+
+"STC2 F005": {
+uzunAdi: "X ve Y için motor devre kesici - STC2'de Q11",
+neden: "Kısa devre veya aşırı güç yükü",
+mudahale: [
+"Sebebini bulun",
+"Kabloları kontrol edin",
+"Aşırı yük için motorları kontrol edin",
+"Kontrol alanındaki tüm modülleri ve bileşenleri inceleyin",
+"Arızayı giderin",
+"Sistemi sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+
+"STC2 F006": {
+uzunAdi: "Devreye giren STC2'de motor devre kesici teleskopik tahrikler Q41 veya Q51",
+neden: "Kısa devre veya aşırı güç yükü",
+mudahale: [
+"Nedeni bulun",
+"Kabloları kontrol edin",
+"Mevcut ortamdaki tüm modülleri ve bileşenleri aşırı güç yüklemesi için kontrol edin",
+"Sorunu giderin",
+"Paneldeki veya istifleme aracı kabinindeki sıfırlama tuşundan arızayı sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F007": {
+uzunAdi: "Arıza devreye giren STC2'de aşırı yüklü motor X-aksı F21A veya F21B",
+neden: "Aşırı güç yüklemesi",
+mudahale: [
+"Nedeni bulun",
+"Aşırı yüklenme için mevcut ortamdaki tüm modülleri ve bileşenleri kontrol edin",
+"Sorunu giderin",
+"Paneldeki veya istifleme aracı kabinindeki sıfırlama tuşundan arızayı sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F008": {
+uzunAdi: "Devreye giren STC2'de Q21 motor devre kesici frenleri",
+neden: "Kısa devre veya aşırı güç yükü",
+mudahale: [
+"Nedeni bulun",
+"Kabloları kontrol edin",
+"Mevcut ortamdaki tüm modülleri ve bileşenleri aşırı güç yüklemesi için kontrol edin",
+"Sorunu giderin",
+"Paneldeki veya istifleme aracı kabinindeki sıfırlama tuşundan arızayı sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+
+"STC2 F009": {
+uzunAdi: "Devreye giren STC2 içinde emniyet şalteri X-aksı başlama pozisyonu M21B1",
+neden: "Devreye giren emniyet şalteri X-aksı (istifleme aracı tahrikleri yanlış pozisyonda)",
+mudahale: [
+"İstifleme aracını manuel moda çalıştırın",
+"Ana şalteri açın",
+"Yan bağlantı için şalteri etkinleştirin",
+"Manuel mod X-aksına gidin",
+"Paneldeki manuel modu açın",
+"İstifleme aracını emniyet şalterinden uzaklaştırın",
+"Manuel modda sürüş yalnızca mobil panelin arka tarafındaki 3 konumlu tuşla çalışır"
+],
+fotograf: "",
+cozumler: []
+},
+
+"STC2 F010": {
+uzunAdi: "Devreye giren STC2 içinde emniyet şalteri X-aksı bitiş pozisyonu M21B1",
+neden: "Devreye giren emniyet şalteri X-aksı (istifleme aracı tahrikleri yanlış pozisyonda)",
+mudahale: [
+"İstifleme aracını manuel moda çalıştırın",
+"Ana şalteri açın",
+"Yan bağlantıyı etkinleştirin",
+"Manuel mod X-aksına gidin",
+"Paneldeki manuel modu açın",
+"İstifleme aracını emniyet şalterinden uzaklaştırın",
+"Manuel modda sürüş yalnızca mobil panelin arka tarafındaki 3 konumlu tuşla yapılır"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F011": {
+uzunAdi: "Devreye giren STC1'de emniyet şalteri Y-aksı konumu yukarı M31B2",
+neden: "Devreye giren emniyet şalteri Y-aksı (istifleme aracı tahrikleri yanlış pozisyonda)",
+mudahale: [
+"İstifleme aracını manuel moda çalıştırın",
+"Ana şalteri açın",
+"Yan bağlantıyı etkinleştirin",
+"Manuel mod Y-aksına gidin",
+"Paneldeki manuel modu açın",
+"İstifleme aracını emniyet şalterinden uzaklaştırın",
+"Manuel modda sürüş yalnızca mobil panelin arka tarafındaki 3 konumlu tuşla çalışır"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F012": {
+uzunAdi: "Devreye giren STC2'de emniyet şalteri Y-aksı konumu yukarı M31B3",
+neden: "Devreye giren emniyet şalteri Y-aksı (istifleme aracı tahrikleri yanlış pozisyonda)",
+mudahale: [
+"İstifleme aracını manuel moda çalıştırın",
+"Ana şalteri açın",
+"Yan bağlantıyı etkinleştirin",
+"Manuel mod Y-aksına gidin",
+"Paneldeki manuel modu açın",
+"İstifleme aracını emniyet şalterinden uzaklaştırın",
+"Manuel modda çalışma yalnızca mobil panelin arka tarafındaki 3 konumlu tuşla yapılır"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F013": {
+uzunAdi: "Devreye giren STC2'de emniyet şalteri Y-aksı kablo gerginliği M31B5",
+neden: "Kablo gerginliğinin emniyet şalteri devreye girdi",
+mudahale: [
+"Yukarı kaldırmak için hız sınırlayıcısından gelen kabloyu kontrol edin",
+"Kablo kırılabilir veya gerilim kaybolmuş olabilir",
+"Kablo gerginliğini kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+
+"STC2 F014": {
+uzunAdi: "Hız sınırı izleme M31B4 Y-aksı STC2",
+neden: "Hız emniyet şalteri Y-aksı devreye giriyor, kaldırma platformu çok hızlı çalışıyor",
+mudahale: [
+"Kabloyu ve platformu çatallarla kontrol edin",
+"Emniyet mandalı tetiklenebilir",
+"Lütfen bunun için istifleme aracı kılavuzuna bakın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F015": {
+uzunAdi: "STC2 içindeki tel kablonun emniyet şalteri freni M31B1",
+neden: "Emniyet şalteri kablosu devreye girer",
+mudahale: [
+"Yukarı kaldırmak için hız sınırlayıcısından gelen kabloyu kontrol edin",
+"Kablo kırılabilir veya gerilim yükü düşüktür"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F016": {
+uzunAdi: "Devreye giren STC2'de Q31 motor devre kesici frenleri",
+neden: "Kısa devre veya aşırı güç yükü",
+mudahale: [
+"Nedeni bulun",
+"Kabloları kontrol edin",
+"Mevcut ortamdaki tüm modülleri ve bileşenleri aşırı güç yüklemesi için kontrol edin",
+"Sorunu giderin",
+"Paneldeki veya istifleme aracı kabinindeki sıfırlama tuşundan arızayı sıfırlayın"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F017": {
+uzunAdi: "Acil durdurma dıştan (K2/K3) - STC2",
+neden: "Acil durdurma için iletken ray, voltaj altında değil",
+mudahale: [
+"İstifleme aracı alanının içindeyseniz istifleme aracını manuel moda getirin",
+"İstifleme aracının dışındaysanız ve araç otomatikteyse makaralı konveyör kabininin sinyallerini kontrol edin",
+"Ana kabinde 230V kaybı olup olmadığını kontrol edin",
+"L5-2 bölgesini kontrol edin",
+"Koridordaki powerrail üzerindeki sıra hatalarını kontrol edin"
+],
+fotograf: "",
+cozumler: []
+},
+ 
+"STC2 F018": {
+uzunAdi: "Acil durdurma - S6 dolap kapağı STC2",
+neden: "Dolabın kapağındaki acil durdurma itilmiş",
+mudahale: [
+"Acil durdurmayı çekin ve çıkarın",
+"İstifleme aracını sıfırlayın",
+"Paneldeki veya istifleme aracı kabinindeki sıfırlama tuşunu kullanın"
+],
+fotograf: "",
+cozumler: []
+},
+
+"STC2 F019": {
+uzunAdi: "Acil durdurma mobil paneli - STC2",
+neden: "Mobil paneldeki acil durdurma itilmiş",
+mudahale: [
+"Acil durdurmayı çekin ve çıkarın",
+"İstifleme aracını sıfırlayın",
+"Paneldeki veya istifleme aracı kabinindeki sıfırlama tuşunu kullanın"
+],
+fotograf: "",
+cozumler: []
+},
+
 "AW1 F078": {
  
 uzunAdi: "No Motion Detected",
