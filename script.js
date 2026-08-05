@@ -4104,7 +4104,7 @@ ${alarmlar[kod].uzunAdi}
  
 document.getElementById("alarmListesi").innerHTML =
 html;
-}
+
 let aktifKategori = null;
  
 function kategoriGoster(prefix) {
