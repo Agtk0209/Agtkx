@@ -6,7 +6,6 @@ const YONETICI_SIFRESI = "Aga123";
  
 const varsayilanAlarmlar = {
 
-
 "STC1 F001": {
 uzunAdi: "Güç kaynağı 400V/24VDC arızası - G1",
 neden: "Kısa devre veya aşırı güç yükü",
@@ -668,14 +667,6 @@ fotograf: "",
 cozumler: []
 },
  
-"STC1 F051": {
-uzunAdi: "Arıza ES için bağlantı PLC konveyör tekniği veriler",
-neden: "Makaralı konveyörden ana PLC'ye bağlantı kaybolur",
-mudahale: [
-"PLC'yi kontrol et",
-"Veri sensörlerini kontrol et",
-"Ethernet kablosunu kontrol et",
-"İletiş
 
 "AW1 F078": {
  
