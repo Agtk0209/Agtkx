@@ -3733,39 +3733,7 @@ JSON.stringify(alarmlar)
 );
  
 }
-function vardiyaBelirle() {
  
-const simdi = new Date();
- 
-const saat = simdi.getHours();
-const dakika = simdi.getMinutes();
- 
-const toplamDakika = saat * 60 + dakika;
- 
-const alan = document.getElementById("vardiya");
- 
-alan.classList.remove(
-"vardiyaA",
-"vardiyaB",
-"vardiyaC"
-);
- 
-if (toplamDakika >= 450 && toplamDakika < 930) {
- 
-alan.value = "🟢 A Vardiyası";
-alan.classList.add("vardiyaA");
- 
-} else if (toplamDakika >= 930 && toplamDakika < 1410) {
- 
-alan.value = "🟡 B Vardiyası";
-alan.classList.add("vardiyaB");
- 
-} else {
- 
-alan.value = "🔵 C Vardiyası";
-alan.classList.add("vardiyaC");
-}
-} 
 function tarihSaat() {
  
 document.getElementById("saat").innerHTML =
@@ -3775,8 +3743,7 @@ document.getElementById("saat").innerHTML =
  
 setInterval(tarihSaat, 1000);
 tarihSaat();
-vardiyaBelirle();
-setInterval(vardiyaBelirle, 60000); 
+ 
 listeyiYukle();
  
 function listeyiYukle() {
