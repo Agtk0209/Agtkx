@@ -468,8 +468,7 @@ mudahale: [
 "Referans moduna gir",
 "REF modunu aç",
 "İstifleme aracını işaretli konuma getir",
-"Referans Z2 eksenine bas ref modunu açın ve 
-istifleme aracını işaretli konuma getirin belirtilen z2 aksına' basın "
+"Referans Z2 eksenine bas"
 ],
 fotograf: "",
 cozumler: []
