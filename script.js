@@ -37,7 +37,7 @@ uzunAdi:
 neden:
 "Fork bini üzerine aldıktan sonra güvenli bölgede değil. Gap sensörleri görüyor.",
  
-mudahale: [
+mudehale: [
 "Sağ sensörü kontrol et",
 "Sol sensörü kontrol et",
 "Reflektörleri temizle",
@@ -58,7 +58,7 @@ uzunAdi: "No Motion Detected",
 neden:
 "AW1 tarafında uzun süre istekte olan feeder var.",
  
-mudahale: [
+mudehale: [
 "İstekte olan feederleri WMS 'Feeder Overview' sayfasından kontrol et",
 "İstekte olan feederın buffer alanında tütün olduğundan emin ol.",
 "Feader içini kameralardan kontrol edip en kısa zamanda beslenmesini sağla"
