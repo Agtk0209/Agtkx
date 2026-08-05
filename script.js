@@ -461,9 +461,3 @@ window.kayitliAlarmlariGoster = kayitliAlarmlariGoster;
 
 firebaseTest();
  
-window.alarmAra = alarmAra;
-window.alarmEkle = alarmEkle;
-window.notKaydet = notKaydet;
-window.csvIndir = csvIndir;
-window.tumVerileriSil = tumVerileriSil;
-window.kayitliAlarmlariGoster = kayitliAlarmlariGoster;
