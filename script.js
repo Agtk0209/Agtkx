@@ -4108,3 +4108,45 @@ ${alarmlar[kod].uzunAdi}
 document.getElementById("alarmListesi").innerHTML =
 html;
 }
+let aktifKategori = null;
+ 
+function kategoriGoster(prefix) {
+ 
+if (aktifKategori === prefix) {
+ 
+document.getElementById("alarmListesi").innerHTML = "";
+ 
+aktifKategori = null;
+ 
+return;
+}
+ 
+aktifKategori = prefix;
+ 
+let html = "";
+ 
+let sayac = 0;
+ 
+for (let kod in alarmlar) {
+ 
+if (kod.startsWith(prefix)) {
+ 
+sayac++;
+ 
+html += `
+<div style="
+background:white;
+padding:10px;
+margin:5px 0;
+border-radius:8px;
+border-left:5px solid #28a745;">
+<b>${kod}</b><br>
+${alarmlar[kod].uzunAdi}
+</div>
+`;
+}
+}
+ 
+document.getElementById("alarmListesi").innerHTML =
+`<h3>${prefix} Toplam Alarm: ${sayac}</h3>` + html;
+}
