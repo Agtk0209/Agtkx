@@ -390,7 +390,6 @@ fotograf: "",
 cozumler: []
 },
 
-JavaScript
 "STC1 F031": {
 uzunAdi: "Arızası teleskopik M41B2 anahtarlı değil",
 neden: "Çatal yanlış pozisyonda",
