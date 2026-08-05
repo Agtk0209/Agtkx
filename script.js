@@ -340,7 +340,7 @@ link.download =
 link.click();
 }
  
-function alarmEkle() {
+async function alarmEkle() {
  
 const alarmNo =
 document.getElementById("yeniAlarmNo").value.trim();
@@ -384,6 +384,17 @@ fotograf: "",
 cozumler: []
  
 };
+ 
+await setDoc(
+doc(db, "Alarmlar", alarmNo),
+{
+uzunAdi: uzunAdi,
+neden: neden,
+mudahale: mudahale,
+fotograf: "",
+cozumler: []
+}
+);
  
 kaydet();
  
