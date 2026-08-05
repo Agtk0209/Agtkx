@@ -54,12 +54,21 @@ JSON.parse(JSON.stringify(varsayilanAlarmlar));
  
 async function firebaseAlarmlariYukle() {
  
+console.log("Firebase yükleme başladı");
+ 
 const snapshot =
 await getDocs(
 collection(db, "Alarmlar")
 );
  
+console.log("Doküman sayısı:", snapshot.size);
+ 
 snapshot.forEach((belge) => {
+ 
+console.log(
+belge.id,
+belge.data()
+);
  
 alarmlar[belge.id] =
 belge.data();
