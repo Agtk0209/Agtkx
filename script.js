@@ -4081,29 +4081,7 @@ return false;
 return sifre === YONETICI_SIFRESI;
 }
  
-let html =
-"<h3>Toplam Alarm Sayısı: " +
-Object.keys(alarmlar).length +
-"</h3>";
- 
-for (let kod in alarmlar) {
- 
-html += `
-<div style="
-background:white;
-padding:10px;
-margin:5px 0;
-border-radius:8px;
-border-left:5px solid #28a745;
-">
-<b>${kod}</b><br>
-${alarmlar[kod].uzunAdi}
-</div>
-`;
-}
- 
-document.getElementById("alarmListesi").innerHTML =
-html;
+
 
 let aktifKategori = null;
  
